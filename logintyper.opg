@@ -31,7 +31,39 @@ if(user.getUserRole().equals("Cashier")) ...
 
 und so weiter
 
-6) I skal nu forsøge at 
+6) I kan nu forsøge at modificere jeres kode så hver switch instantierer en controller som enten er admin, kasserer eller træner.
+Dertil kræves en controller som er abstrakt og som de andre extender. Alle deler data-strukturer og variabler men skal hver især implementere
+deres udgave af runProgram. Så kan man nemlig lade admincontrolleren tilgå hele paletten men f.eks begrænse trænerens adgang.
+
+Her er et forslag til en ufuldstændig struktur:
+
+├── Main.java
+│
+├── Controller
+│   ├── AdminController.java
+│   ├── CashierController.java
+│   ├── Controller.java
+│   └── TrainerController.java
+├── Datalag
+│   ├── DisciplineMapper.java
+│   ├── MemberMapper.java
+│   ├── ResultMapper.java
+│   └── UserMapper.java
+├── Model
+│   ├── DisciplineHandler.java
+│   ├── Member.java
+│   ├── MemberHandler.java
+│   ├── ResultHandler.java
+│   ├── User.java
+│   └── UserHandler.java
+├── Util
+│   ├── DBConnector.java
+│   └── SwimResultConverter.java
+└── View
+    ├── MemberView.java
+    └── UserView.java
+
+
 
 
 

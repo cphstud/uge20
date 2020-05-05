@@ -1,5 +1,9 @@
+De følgende opgaver kan I enten lave i to steps eller nøjes med step2.
+Første step er at arbejde i workbench og bruge SQL.
+Andet step er at lave Mapper-klassen der så udfører den SQL I har lavet i step1.
 
 1) Opret en medlemstabel og indsæt Pernille Blumes stamdata
+(enten i WorkBench eller i Jeres MemberMapper-klasse hvor I så opretter en test som kan indlæse data)
 
         Pernille Blume
         Årgang: 1994
