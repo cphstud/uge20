@@ -1,0 +1,259 @@
+package mydolphin.DataMappers;
+
+import mydolphin.Util.DBConnector;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+import mydolphin.Model.Result;
+
+public class ResultMapper {
+	
+	public int writeResultToDB(HashMap<String,String> params) {
+//:
+		int resultid = 0;
+		ArrayList<String> keys = new ArrayList<>();
+		for (int i = 0; i < params.size(); i++) {
+			String tmpKey = "Disciplin" + i;
+			keys.add(params.get(tmpKey));
+		}
+		
+		try {
+			Connection conn = DBConnector.getInstance().getConnection();
+			//new Result(id,name,year,active,competitor);
+			// initialisere JDBC-komponenter
+			ResultSet result = null;
+			PreparedStatement pstmt = null;
+			// Queries
+			String query = "INSERT INTO results (name,email,year,active,compete,gender)";
+			query += " VALUES (?,?,?,?,?,?)";
+			try {
+				
+				pstmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+				pstmt.setString(1, params.get("Name"));
+				pstmt.setString(2, params.get("Email"));
+				pstmt.setInt(3, Integer.parseInt(params.get("year")));
+				pstmt.setBoolean(4, Boolean.parseBoolean(params.get("active")));
+				pstmt.setBoolean(5, Boolean.parseBoolean(params.get("compete")));
+				pstmt.setInt(6,Integer.parseInt(params.get("gender")));
+				pstmt.executeUpdate();
+				result = pstmt.getGeneratedKeys();
+				if (result.next()) {
+					resultid = result.getInt(1);
+					System.out.println("Inserted result " + params.get("Name") + " id " + resultid);
+				} else {
+					System.out.println("No  insert");
+				}
+			} catch (Exception e) {
+				System.out.println("Error " + e);
+				
+			}
+		} catch (SQLException e) {
+			System.out.println("Error: " + e);
+		}
+		
+		return resultid;
+		
+	}
+	/*
+	ResultID	int(11)	NO	PRI	NULL	auto_increment
+	Employeeid	int(11)	YES		NULL
+	Name	varchar(255)	YES		NULL
+	Year	int(11)	YES		NULL
+	Gender	int(11)	YES		NULL
+	Active	tinyint(4)	YES		NULL
+	Compete	tinyint(4)	YES		NULL
+	email	varchar(255)	YES		NULL
+	disciplinid	int(11)	YES		NULL
+	styleid	int(11)	YES		NULL
+	*/
+	
+	public ArrayList<Result> getAllResultsFromDBBasic() throws SQLException {
+		ArrayList<Result> results = new ArrayList<>();
+		// connect til DB
+		//int id, String name, String email, int year, boolean active
+		Connection conn = DBConnector.getInstance().getConnection();
+		// initialisere JDBC-komponenter
+		ResultSet result = null;
+		Statement stmt = null;
+		// Queries
+		String query = "SELECT  resultid, name,email,year,active FROM results";
+		stmt = conn.createStatement();
+		result = stmt.executeQuery(query);
+		while(result.next()) {
+			int resultid = result.getInt("resultid");
+			int year = result.getInt("year");
+			boolean active = result.getBoolean("active");
+			String name = result.getString("name");
+			String email = result.getString("email");
+			Result result = new Result(resultid,name,email,year,active);
+			results.add(result);
+		}
+		
+		// lave Result-objekter
+		// sætte dem i listen
+		
+		return results;
+	}
+	
+	public ArrayList<Result> getAllResultsFromDB() throws SQLException {
+		ArrayList<Result> results = new ArrayList<>();
+		// connect til DB
+		Connection conn = DBConnector.getInstance().getConnection();
+		// initialisere JDBC-komponenter
+		ResultSet result = null;
+		Statement stmt = null;
+		// Queries
+		String query = "SELECT * FROM results";
+		stmt = conn.createStatement();
+		result = stmt.executeQuery(query);
+		while(result.next()) {
+			System.out.println("Result: " + result.getString("Name"));
+		}
+		
+		// lave Result-objekter
+		// sætte dem i listen
+		
+		return results;
+	}
+	
+	
+	public Result getResultFromDBbyEmail(String email) {
+		Result result = null;
+		Connection conn = null;
+		try {
+			conn = DBConnector.getInstance().getConnection();
+		} catch (Exception e) {
+			System.out.println("Error conn" + e);
+		}
+		ResultSet result = null;
+		Statement stmt = null;
+		// Queries
+		String query = "SELECT * FROM results WHERE email = \"" + email + "\"";
+		try {
+			stmt = conn.createStatement();
+			result = stmt.executeQuery(query);
+			if (result.next()) {
+				result = new Result(
+					result.getString("name"),
+					result.getString("email"),
+					result.getInt("year"),
+					result.getInt("gender"),
+					result.getBoolean("active")
+				);
+			} else {
+				throw new Exception("Medlem findes ikke");
+			}
+		} catch (Exception e) {
+			System.out.println("Q failed " + e);
+		}
+		return result;
+	}
+	
+	public ArrayList<Result> getResultsFromDBLike(String field, String filter) {
+		ArrayList<Result> results = new ArrayList<>();
+		Result result = null;
+		Connection conn = null;
+		try {
+			conn = DBConnector.getInstance().getConnection();
+		} catch (Exception e) {
+			System.out.println("Error conn" + e);
+		}
+		ResultSet result = null;
+		Statement stmt = null;
+		// Queries
+		String query = "SELECT * FROM results WHERE " + field + " LIKE \"%" + filter + "%\"";
+		System.out.println("q: " + query);
+		try {
+			stmt = conn.createStatement();
+			result = stmt.executeQuery(query);
+			while (result.next()) {
+				result = new Result(
+					result.getString("name"),
+					result.getString("email"),
+					result.getInt("year"),
+					result.getInt("gender"),
+					result.getBoolean("active")
+				);
+				results.add(result);
+			}
+		} catch (Exception e) {
+			System.out.println("Q failed " + e);
+		}
+		return results;
+	}
+	public void writeResultToDB(Result result) {
+		try {
+			Connection conn = DBConnector.getInstance().getConnection();
+			//new Result(id,name,year,active,competitor);
+			// initialisere JDBC-komponenter
+			int id = 0;
+			ResultSet result = null;
+			PreparedStatement pstmt = null;
+			// Queries
+			String query = "INSERT INTO results (name,email,year,active,compete,gender)";
+			query += " VALUES (?,?,?,?,?,?)";
+			try {
+				
+				pstmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+				pstmt.setString(1, result.getName());
+				pstmt.setString(2, result.getEmail());
+				pstmt.setInt(3, result.getYear());
+				pstmt.setBoolean(4, result.isActive());
+				pstmt.setBoolean(5, result.isCompetitor());
+				pstmt.setInt(6, result.getGender());
+				pstmt.executeUpdate();
+				result = pstmt.getGeneratedKeys();
+				if (result.next()) {
+					int resultid = result.getInt(1);
+					System.out.println("Inserted result " + result.getName() + " id " + resultid);
+					result.setId(resultid);
+				} else {
+					System.out.println("No  insert");
+				}
+			} catch (Exception e) {
+				System.out.println("Error " + e);
+				
+			}
+		} catch (SQLException e) {
+			System.out.println("Error: " + e);
+		}
+		
+	}
+	public Result  getResultById(int id) {
+		Result result = null;
+		Connection conn = null;
+		try {
+			conn = DBConnector.getInstance().getConnection();
+		} catch (Exception e) {
+			System.out.println("Error conn" + e);
+		}
+		ResultSet result = null;
+		Statement stmt = null;
+		// Queries
+		String query = "SELECT * FROM results WHERE resultid = "+id;
+		System.out.println("q: " + query);
+		try {
+			stmt = conn.createStatement();
+			result = stmt.executeQuery(query);
+			if (result.next()) {
+				result = new Result(
+					result.getString("name"),
+					result.getString("email"),
+					result.getInt("year"),
+					result.getInt("gender"),
+					result.getBoolean("active")
+				);
+			} else {
+				throw new Exception("No result by resultid " + id);
+			}
+		} catch (Exception e) {
+			System.out.println("Q failed " + e);
+		}
+		return  result;
+	}
+}
+

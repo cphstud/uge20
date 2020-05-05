@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+<html lang="da">
+
+	<!-- begin::Head -->
+	<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131545779-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-131545779-1');
+	</script>
+
+		<meta charset="utf-8" />
+		<title>Svømmetider | Ranglister</title>
+		<meta name="description" content="Svømmetider er dansk svømnings tidsdatabase, hvor alle svømmeresultater, ranglister, nåletider og rekorder findes.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="google-site-verification" content="2a9psgoiGAH9YhZmWbZ_gRQHMZtIOcUkhmiEjvexWhg" />
+		<!--begin::Web font -->
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+		<script>
+			WebFont.load({
+                google: {"families":["Poppins:300,400,500,600,700"]},
+                active: function() {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+
+		<!--end::Web font -->
+
+		<!--begin::Page Vendors Styles -->
+		<link href="/assets/vendors/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Vendors Styles -->
+
+		<!--begin:: Global Mandatory Vendors -->
+		<link href="/assets/vendors/general/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+
+		<!--end:: Global Mandatory Vendors -->
+
+		<!--begin:: Global Optional Vendors -->
+		<link href="/assets/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/nouislider/distribute/nouislider.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/owl.carousel/dist//assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/owl.carousel/dist//assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/animate.css/animate.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/morris.js/morris.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/general/socicon/css/socicon.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/custom/vendors/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/vendors/custom/vendors/fontawesome5/css/all.min.css" rel="stylesheet" type="text/css" />
+
+		<!--end:: Global Optional Vendors -->
+
+		<!--begin::Global Theme Styles -->
+		<link href="/assets/style/svoemmetider.css" rel="stylesheet" type="text/css" />
+
+		<!--end::Global Theme Styles -->
+
+		<!--begin::Layout Skins -->
+
+		<!--end::Layout Skins -->
+		<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	</head>
+
+	<!-- end::Head -->
+
+	<!-- begin::Body -->
+	<body class="k-page--loading-enabled k-page--loading k-page--fixed k-header--fixed k-header--minimize-menu k-header-mobile--fixed">
+
+	
+	
+		<!-- begin::Page loader -->
+
+		<!-- end::Page Loader -->
+
+		<!-- begin:: Page -->
+
+		<!-- begin:: Header Mobile -->
+		<div id="k_header_mobile" class="k-header-mobile  k-header-mobile--fixed " style="background-color:#003767">
+			<div class="k-header-mobile__logo">
+				<a href="/" class="logo-tekst">
+					SVØMMETIDER
+				</a>
+			</div>
+			<div class="k-header-mobile__toolbar">
+				<button class="k-header-mobile__toolbar-toggler" id="k_header_mobile_toggler"><span></span></button>
+			</div>
+		</div>
+
+		<!-- end:: Header Mobile -->
+		<div class="k-grid k-grid--hor k-grid--root">
+			<div class="k-grid__item k-grid__item--fluid k-grid k-grid--ver k-page">
+				<div class="k-grid__item k-grid__item--fluid k-grid k-grid--hor k-wrapper " id="k_wrapper">
+
+					<!-- begin:: Header -->
+					<div id="k_header" class="k-header k-grid__item  k-header--fixed " data-kheader-minimize="on" style="background-color:#003767">
+						<div class="k-header__top">
+							<div class="k-container">
+
+								<!-- begin:: Brand -->
+								<div class="k-header__brand   k-grid__item" id="k_header_brand">
+									<div class="k-header__brand-logo">
+										<a href="/">
+											<div alt="Logo" class="k-header__brand-logo-default logo-tekst">SVØMMETIDER</div>
+										</a>
+									</div>
+								</div>
+
+								<!-- end:: Brand -->
+
+							</div>
+						</div>
+						<div class="k-header__bottom">
+							<div class="k-container">
+
+								<!-- begin: Header Menu -->
+								<button class="k-header-menu-wrapper-close" id="k_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+								<div class="k-header-menu-wrapper" id="k_header_menu_wrapper" >
+									<div id="k_header_menu" class="k-header-menu k-header-menu-mobile ">
+										<ul class="k-menu__nav ">
+											<li class="k-menu__item " aria-haspopup="true"><a href="/staevner" class="k-menu__link "><span class="k-menu__link-text">Stævner</span></a></li>
+											<li class="k-menu__item " aria-haspopup="true"><a href="/ranglister" class="k-menu__link "><span class="k-menu__link-text">Ranglister</span></a></li>
+											<li class="k-menu__item " aria-haspopup="true"><a href="/svoemmere" class="k-menu__link "><span class="k-menu__link-text">Svømmere</span></a></li>
+											<li class="k-menu__item " aria-haspopup="true"><a href="/klubskifter" class="k-menu__link "><span class="k-menu__link-text">Klubskifter</span></a></li>
+										</ul>
+									</div>
+									<div class="k-header-toolbar">
+										<a href="https://kontoret.svømmetider.dk/" class="btn btn-wide btn-bold btn-pill btn-upper" style="background-color:#003767;color:#FFF">Log ind</a>
+									</div>
+								</div>
+
+								<!-- end: Header Menu -->
+							</div>
+						</div>
+					</div>
+
+					<!-- end:: Header -->
+
+					
+<div class="k-grid__item k-grid__item--fluid k-grid k-grid--ver k-grid--stretch">
+<div class="k-container k-content-wrapper  k-grid k-grid--ver" id="k_content_wrapper">
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+
+
+<!-- begin:: Content Head -->
+<div class="k-content__head	k-grid__item">
+<div class="k-content__head-main">
+<h3 class="k-content__head-title">Ranglister</h3>
+<div class="k-content__head-breadcrumbs">
+<a href="/" class="k-content__head-breadcrumb-home"><i class="flaticon-home-2"></i></a>
+</div>
+</div>
+</div>
+<!-- end:: Content Head -->
+
+<!-- begin:: Content Body -->
+<div class="k-content__body	k-grid__item k-grid__item--fluid">
+
+<!--begin::Dashboard 4-->  
+<!--begin::Row-->
+<div class="row">
+	<div class="col-md-4">
+		<div class="k-portlet k-portlet--mobile">
+			<div class="k-portlet__body">
+			
+			
+				<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="tab" href="#" data-target="#k_tabs_1_1">Ranglister</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " data-toggle="tab" href="#k_tabs_1_2">Point ranglister</a>
+				</li>
+				</ul>
+				<div class="tab-content">
+				<div class="tab-pane  active" id="k_tabs_1_1" role="tabpanel">
+							
+<!--begin::Form-->
+						<form class="k-form" id="form1" action="" method="POST">
+						<input type="hidden" value="0" name="point_Type">
+								<div class="form-group row">
+									<label class="col-lg-2 col-form-label">Bassin:</label>
+									<div class="col-lg-10">
+										<div class="k-radio-inline">
+											<label class="k-radio">
+												<input type="radio" value="2" name="pool" id="pool" checked='checked' '> Kortbane
+												<span></span>
+											</label>
+											<label class="k-radio">
+												<input type="radio" value="1" name="pool" id="pool"'> Langbane
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-2 col-form-label">Løb:</label>
+									<div class="col-lg-10"> 
+	<select class='form-control' name='lob' id='lob'>
+		<option value='1' selected>50 Fri</option>
+		<option value='2'>100 Fri</option>
+		<option value='3'>200 Fri</option>
+		<option value='4'>400 Fri</option>
+		<option value='5'>800 Fri</option>
+		<option value='6'>1.500 Fri</option>
+		<option value='7'>50 Ryg</option>
+		<option value='8'>100 Ryg</option>
+		<option value='9'>200 Ryg</option>
+		<option value='10'>50 Bryst</option>
+		<option value='11'>100 Bryst</option>
+		<option value='12'>200 Bryst</option>		
+		<option value='13'>50 Fly</option>
+		<option value='14'>100 Fly</option>
+		<option value='15'>200 Fly</option>
+		<option value='16'>100 Medley</option>
+		<option value='17'>200 Medley</option>
+		<option value='18'>400 Medley</option>
+		<option value='48'>25 Fri</option>
+		<option value='49'>25 Ryg</option>
+		<option value='50'>25 Bryst</option>
+		<option value='51'>25 Fly</option>		
+	</select>								</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-2 col-form-label">Køn:</label>
+									<div class="col-lg-10">
+										<div class="k-radio-inline">
+											<label class="k-radio">
+												<input type="radio" value="2" name="gender" checked='checked'> Piger/Damer
+												<span></span>
+											</label>
+											<label class="k-radio">
+												<input type="radio" value="1" name="gender"> Drenge/Herrer
+												<span></span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<label class="col-lg-2 col-form-label">Periode:</label>
+									<div class="form-group col-lg-10 form-inline" style="">
+										<input type="text" name="date_from" value='01/01/2019' class="form-control col-lg-6" id="k_datepicker_1" placeholder="Fra">
+										<input type="text" name="date_to" class="form-control col-lg-6" id="k_datepicker_1" placeholder="Til">
+									</div>
+								</div>	
+								<div class="row">
+									<label class="col-lg-2 col-form-label">Gruppe:</label>
+
+										<div class="form-group col-lg-10">
+											<select class='form-control col-lg-12' name='group' id='group'>
+												<option value="" disabled>Alders felterne er udfyldt</option>
+												<option value="1" selected>Alle</option>
+												<option value="2">Senior</option>
+												<option value="3">Junior</option>
+												<option value="4">Årgang</option>
+												<option value="5">Masters (alle)</option>
+												<option value="10">Masters 25-29 år</option>
+												<option value="11">Masters 30-34 år</option>
+												<option value="12">Masters 35-39 år</option>
+												<option value="13">Masters 40-44 år</option>
+												<option value="14">Masters 45-49 år</option>
+												<option value="15">Masters 50-54 år</option>
+												<option value="16">Masters 55-59 år</option>
+												<option value="17">Masters 60-64 år</option>
+												<option value="18">Masters 65-69 år</option>
+												<option value="19">Masters 70-74 år</option>
+												<option value="20">Masters 75-79 år</option>
+												<option value="21">Masters 80-84 år</option>
+												<option value="22">Masters 85-89 år</option>
+												<option value="23">Masters 90-94 år</option>
+												<option value="24">Masters 95-99 år</option>
+												<option value="25">Masters 100 år og ældre</option>	
+											</select>
+										</div>
+								</div>
+								<div class="row form-group">	
+									<label class="col-lg-2 col-form-label">Alder:</label>
+									<div class="col-lg-10 form-inline">
+										<input type="text" name="age_from" class="form-control col-lg-6" placeholder="Fra">
+										<input type="text" name="age_to" class="form-control col-lg-6" placeholder="Til">
+									</div>	
+								</div>
+								<div class="row">
+									<label class="col-lg-2 col-form-label">Vis:</label>
+
+										<div class="form-group col-lg-10">
+											<select class='form-control col-lg-12' name='club' id='club'>
+												<option value="" selected>Vis alle svømmere</option>
+												<option disabled="disabled"></option>
+												<option value="10000">Vestdanmark</option>
+												<option value="10001">Østdanmark</option>
+												<option disabled="disabled"></option>
+												<option value="20005">Region Nordjylland</option>
+												<option value="20004">Region Midtjylland</option>
+												<option value="20003">Region Syddanmark</option>
+												<option value="20002">Region Sydsjællland</option>
+												<option value="20001">Region Nordsjælland</option>
+												<option disabled="disabled"></option>
+<option value='330'>/tri club denmark</option><option value='316'>24 Timer Hjallerup</option><option value='1'>A6</option><option value='2'>A6 JGI-Swim</option><option value='4'>A6 Slangerup Svømmeklub</option><option value='3'>A6 Svømmeklubben Laksen</option><option value='193'>Agerskov Sogns Ungdomsforening</option><option value='328'>Agerskov Ungdomsskole</option><option value='192'>Agfs Svømmeafdeling</option><option value='191'>AIA-Tranbjerg</option><option value='190'>Albertslund IF</option><option value='189'>Alhedens Idrætsforening</option><option value='188'>Aulum GF</option><option value='187'>Auning Svømmeklub</option><option value='186'>Beder-Malling IF</option><option value='185'>Berns Swim Team</option><option value='184'>Billund IF</option><option value='183'>Bjerre Herreds Svømmeklub</option><option value='182'>Bjerringbro Svømmeklub</option><option value='181'>Blåvandshuk Svømmeklub</option><option value='180'>Bogense Svømmeklub</option><option value='179'>Bording Svømmeklub</option><option value='177'>Bov IF</option><option value='175'>Bramming Svømmeklub</option><option value='176'>Brædstrup Svømmeklub</option><option value='173'>Brøndby Strands GF</option><option value='172'>Brønderslev SK08</option><option value='337'>Copenhagen International School</option><option value='167'>DeltaSwim</option><option value='166'>Dragsholm Svømmeklub</option><option value='165'>Dragør Svømmeklub</option><option value='164'>Durup IF</option><option value='163'>Ebeltoft Svømme Klub</option><option value='162'>Egebjerg Svømmeklub</option><option value='160'>Egvad Svømmeklub</option><option value='157'>Erritsø Gymnastik Og IF</option><option value='156'>Esbjerg Svømmeklub</option><option value='153'>Farum Familie Svøm</option><option value='152'>Farum Svømmeklub</option><option value='315'>Faxe Svømmeklub</option><option value='151'>FHI SvømmeKlub</option><option value='150'>Fjerritslev Svømmeklub</option><option value='149'>Frederikshavn Svømmeklub</option><option value='147'>Frederikssund Svømmeklub</option><option value='146'>Frederiksværk Svømmeklub</option><option value='145'>Frem Odense</option><option value='155'>Faaborg Svømmeklub</option><option value='143'>Ganløse Svømmeklub</option><option value='142'>Gentofte Svømme Klub</option><option value='140'>Gladsaxe Svømmeklub</option><option value='139'>Glostrup Svømmeklub</option><option value='138'>Grenaa Svømmeklub</option><option value='137'>GTI - Greve</option><option value='95'>GTI - Ishøj</option><option value='257'>GTI - Tune I.F.</option><option value='136'>Gudhjem Idræts Forening</option><option value='135'>Gudme Svømme Klub</option><option value='133'>Gymnastikforeningen Gefion</option><option value='289'>H2Odense</option><option value='130'>Haderslev Svømme Klub</option><option value='129'>Haderslev Tri 2000</option><option value='127'>Hadsund Svømmeklub</option><option value='86'>Hals Svømmeklub</option><option value='331'>Halstedhus Efterskole</option><option value='126'>Hareskov Idrætsforening</option><option value='335'>Hareskovens Triathlon Klub</option><option value='125'>Harlev Idræts Klub</option><option value='123'>Haslev Svømmeklub</option><option value='120'>Helsinge Svømmeklub</option><option value='317'>Helsingør Handicap Svøm</option><option value='119'>Helsingør Svømmeklub</option><option value='118'>Herlev Svømning</option><option value='117'>Herlufsholm Svømmeklub</option><option value='115'>Herning Svømmeklub</option><option value='132'>HGF Svømning</option><option value='114'>HGU Svømning</option><option value='113'>Hillerød Svømmeklub</option><option value='112'>Hjortshøj-Egå IF Svømmeafdeling</option><option value='111'>Hobro Svømmeklub</option><option value='110'>HOG-Hinnerup</option><option value='109'>Holbæk Motions Svømmeklub</option><option value='108'>Holbæk Svømme Klub</option><option value='107'>Holstebro Svømme Club</option><option value='105'>Hornslet Svømmeklub</option><option value='104'>Horsens Svømmeklub</option><option value='103'>Hovedstadens Svømmeklub</option><option value='101'>Hvidovre Svømmeklub</option><option value='332'>Hørning IF</option><option value='100'>Hørsholm Svømmeforening</option><option value='131'>Haarby Svømmeklub</option><option value='99'>Idrætsforening Jarl, Arden</option><option value='338'>Idrætsforeningen Spækhuggeren</option><option value='98'>IF For Handicappede, Aalborg</option><option value='318'>IFAH Hørsholm</option><option value='97'>IHF Svømning</option><option value='96'>Ikast Svømmeklub</option><option value='93'>Kalundborg SK</option><option value='92'>Karlslunde IF</option><option value='302'>Karlslunde Tri</option><option value='91'>Kjellerup SK</option><option value='90'>Kjøbenhavns GF</option><option value='87'>Kolding SK</option><option value='82'>KSG Idræt, Svømmeafd.</option><option value='262'>KU Svømning og Vandpolo</option><option value='80'>Københavns Triathlonklub 1986</option><option value='79'>Køge Svømmeklub</option><option value='78'>Kølvrå Svømmeklub</option><option value='319'>Lavia, Odder</option><option value='77'>Lavia, Aarhus</option><option value='74'>Livredderskolen Djursland</option><option value='73'>Lyngby Handicap IF</option><option value='72'>Lyngby Svømmeklub</option><option value='71'>Lyseng IF</option><option value='70'>Lystrup IF</option><option value='326'>Låsby Svømmeklub</option><option value='304'>Maribo og Omegns Handicap Idrætsforening</option><option value='68'>Maribo Svømmeforening</option><option value='327'>Midtsjællands Svømmeklub</option><option value='67'>Morsø Svømmeklub</option><option value='66'>Multiatleterne Esbjerg</option><option value='65'>Munkebo Svømme- og kondiklub 72</option><option value='64'>Møns Svømmeklub</option><option value='61'>Nakskov Svømme Klub</option><option value='60'>NNGU - Team Blaabjerg</option><option value='59'>Nord-Als Svømmeklub</option><option value='57'>Nyborg Svømmeklub</option><option value='334'>Nyborg Vandpolo</option><option value='56'>Nysted Svømmeklub</option><option value='63'>Næstved IF</option><option value='54'>Odder Svømmeklub</option><option value='52'>Odsherred Svømmeklub</option><option value='305'>Ollerup-Skerninge Svømmeafd.</option><option value='51'>Orient Svømning</option><option value='50'>Pan Idræt - Mermates</option><option value='94'>Præstø Sport Svømmeafdeling</option><option value='46'>Randers Freja Triathlon</option><option value='45'>Randers GF Neptun</option><option value='44'>Ribe Svømmeklub</option><option value='43'>Ringe Svømme Klub</option><option value='320'>Ringsted Handicap IF</option><option value='41'>Ringsted Svømme Klub</option><option value='40'>Rishøj IF</option><option value='39'>Roklubben Viking</option><option value='38'>Roskilde Svømmeklub</option><option value='37'>Roskilde Svømning</option><option value='36'>Ruds Vedby Svømmeklub</option><option value='35'>Rødby Svømmeklub</option><option value='34'>Rødding Svømmeklub</option><option value='33'>Rødekro Svømmeklub</option><option value='32'>Rønne Svømme Klub</option><option value='288'>Rønnede IF Svømmeafd.</option><option value='29'>Sdr. Omme IF</option><option value='28'>SIGMA Swim</option><option value='27'>Sigma Swim Allerød</option><option value='26'>Sigma Swim Birkerød</option><option value='297'>Silkeborg Motion/Tri-klub</option><option value='25'>Silkeborg Svømmeklub</option><option value='24'>Sindal Svømmeforening</option><option value='22'>Skagen Svømmeklub</option><option value='21'>Skals Gymnastikforening</option><option value='20'>Skanderborg Svømmeklub</option><option value='19'>Skive Svømmeklub Poseidon</option><option value='23'>Skærbæk Svømmeklub</option><option value='18'>Slagelse Svømmeklub</option><option value='17'>Snedsted Svømmeklub</option><option value='16'>Snejbjerg Svømmeklub</option><option value='15'>Solbjerg IF</option><option value='13'>Solrød Svømmeklub</option><option value='325'>Sorø Svømmeklub</option><option value='12'>Spentrup Svømmeklub</option><option value='10'>Startfællesskabet GTI</option><option value='7'>Struer Svømmeklub</option><option value='6'>Støvring Svømmeklub Pingvinen</option><option value='205'>Svendborg Svømme Klub</option><option value='223'>SVØM Korsør</option><option value='224'>Svømmeklubben Branditten</option><option value='298'>Svømmeklubben Delfinen</option><option value='293'>Svømmeklubben Flipper</option><option value='225'>Svømmeklubben Grindsted</option><option value='226'>Svømmeklubben Jet</option><option value='227'>Svømmeklubben Koral</option><option value='228'>Svømmeklubben Kvik, Kastrup</option><option value='271'>Svømmeklubben MK31</option><option value='230'>Svømmeklubben Nejst</option><option value='231'>Svømmeklubben Nord</option><option value='233'>Svømmeklubben Opnør</option><option value='235'>Svømmeklubben Rask</option><option value='236'>Svømmeklubben S 68</option><option value='237'>Svømmeklubben SHS Stevns</option><option value='238'>Svømmeklubben SMUT Terndrup</option><option value='240'>SvømmeKlubben SYD</option><option value='321'>Svømmeklubben Sælungerne</option><option value='241'>Svømmeklubben Søhesten</option><option value='324'>Svømmeklubben Søløven</option><option value='242'>Svømmeklubben Sømærket</option><option value='243'>Svømmeklubben Sønderborg</option><option value='245'>Svømmeklubben Triton Ballerup</option><option value='211'>Swim Team Neptun</option><option value='215'>Swim Team Taastrup - VATCPH</option><option value='31'>Sæby Svømmeklub SSK</option><option value='246'>Søllerød Svømmeklub</option><option value='287'>Søløven Svømmeklub</option><option value='250'>Them Svømmeklub</option><option value='251'>Thisted Svømmeklub</option><option value='253'>Tingbjerg Svømmeklub</option><option value='254'>Tommerup Svømme Klub</option><option value='255'>TRI-4 Triathlon Klub</option><option value='256'>TST Svømning</option><option value='260'>Tønder Svømmeklub</option><option value='261'>Tørring IF</option><option value='263'>Ugerløse Svømmeklub</option><option value='267'>Vallensbæk IF Af 1939</option><option value='268'>Vamdrup I.F.s Svømmeafdeling</option><option value='294'>Vandhund Sydfyn</option><option value='269'>Varde Svømmeklub</option><option value='270'>VAT Copenhagen</option><option value='272'>Vejen Svømmeklub</option><option value='273'>Vejle Svømmeklub</option><option value='276'>Vest-Brøndby</option><option value='303'>Vestfyns Svømmeklub</option><option value='299'>VG 17</option><option value='278'>Viborg Svømme Klub</option><option value='279'>Videbæk Svømme Club</option><option value='281'>VIK-Skovbakken Svømmeafdeling</option><option value='282'>Vildbjerg Svømmeklub</option><option value='283'>Vinderup GF Svømning</option><option value='322'>Vordingborg Handicap Idræt</option><option value='284'>Vordingborg Svømme Klub</option><option value='265'>Værløse Svømmeklub</option><option value='194'>Ærø Svømme Klub</option><option value='285'>Ølgod Svømmeklub</option><option value='295'>Østervrå IF Svømmeafdeling</option><option value='204'>Aabybro Idrætsforening</option><option value='203'>Aalborg Studenternes Idrætsforening</option><option value='202'>Aalborg Svømmeklub</option><option value='201'>Aalborg Triathlon Klub</option><option value='200'>Aarhus 1900 Triathlon</option><option value='199'>Aarhus Idrætsforening Af 1900</option><option value='198'>Aarhus Studenternes Svømmeafdeling</option><option value='197'>Aarhus Swim</option><option value='196'>Aars Svømmeklub</option>											
+											</select>
+										</div>
+								</div>								
+								<div class="row from-group">
+								<div class="col-12">
+									<button type="submit" class="btn btn-primary">Vis rangliste</button>
+									<a href='/ranglister/'><button type="button" class="btn btn-secondary">Nulstil</button></a>
+								</div>
+								</div>
+							</div>
+							
+						</form><!--end::Form-->
+						
+	
+				<div class="tab-pane " id="k_tabs_1_2" role="tabpanel">
+<!--begin::Form-->
+						<form class="k-form" id="form2" action="" method="POST">
+								<div class="form-group row">
+									<label class="col-lg-2 col-form-label">Point:</label>
+									<div class="col-lg-10">
+										<div class="k-radio-inline">
+											<label class="k-radio">
+												<input type="radio" value="1" name="point_type" id="point_type" checked='checked' > FINA Point
+												<span></span>
+											</label><br>
+											<label class="k-radio">
+												<input type="radio" value="2" name="point_type" id="point_type"> SVØM Point
+												<span></span>
+											</label>										
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-2 col-form-label">Bassin:</label>
+									<div class="col-lg-10">
+										<div class="k-radio-inline">
+											<label class="k-radio">
+												<input type="radio" value="2" name="pool" id="pool" checked='checked' > Kortbane
+												<span></span>
+											</label><br>
+											<label class="k-radio">
+												<input type="radio" value="1" name="pool" id="pool"> Langbane
+												<span></span>
+											</label><br>
+											<label class="k-radio">
+												<input type="radio" value="5" name="pool" id="pool"> Begge
+												<span></span>
+											</label>											
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-2 col-form-label">Køn:</label>
+									<div class="col-lg-10">
+										<div class="k-radio-inline">
+											<label class="k-radio">
+												<input type="radio" value="2" name="gender" checked='checked'> Piger/Damer
+												<span></span>
+											</label><br>
+											<label class="k-radio">
+												<input type="radio" value="1" name="gender"> Drenge/Herrer
+												<span></span>
+											</label><br>
+											<label class="k-radio">
+												<input type="radio" value="3" name="gender"> Begge
+												<span></span>
+											</label>											
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<label class="col-lg-2 col-form-label">Periode:</label>
+									<div class="form-group col-lg-10 form-inline" style="">
+										<input type="text" name="date_from" value='01/01/2019' class="form-control col-lg-6" id="k_datepicker_1" placeholder="Fra">
+										<input type="text" name="date_to" class="form-control col-lg-6" id="k_datepicker_1" placeholder="Til">
+									</div>
+								</div>	
+								<div class="row">
+									<label class="col-lg-2 col-form-label">Gruppe:</label>
+
+										<div class="form-group col-lg-10">
+											<select class='form-control col-lg-12' name='group' id='group'>
+												<option value="" disabled>Alders felterne er udfyldt</option>
+												<option value="1" selected>Alle</option>
+												<option value="2">Senior</option>
+												<option value="3">Junior</option>
+												<option value="4">Årgang</option>
+												<option value="5">Masters (alle)</option>
+												<option value="10">Masters 25-29 år</option>
+												<option value="11">Masters 30-34 år</option>
+												<option value="12">Masters 35-39 år</option>
+												<option value="13">Masters 40-44 år</option>
+												<option value="14">Masters 45-49 år</option>
+												<option value="15">Masters 50-54 år</option>
+												<option value="16">Masters 55-59 år</option>
+												<option value="17">Masters 60-64 år</option>
+												<option value="18">Masters 65-69 år</option>
+												<option value="19">Masters 70-74 år</option>
+												<option value="20">Masters 75-79 år</option>
+												<option value="21">Masters 80-84 år</option>
+												<option value="22">Masters 85-89 år</option>
+												<option value="23">Masters 90-94 år</option>
+												<option value="24">Masters 95-99 år</option>
+												<option value="25">Masters 100 år og ældre</option>												
+											</select>
+										</div>
+								</div>
+								<div class="row form-group">	
+									<label class="col-lg-2 col-form-label">Alder:</label>
+									<div class="col-lg-10 form-inline">
+										<input type="text" name="age_from" class="form-control col-lg-6" placeholder="Fra">
+										<input type="text" name="age_to" class="form-control col-lg-6" placeholder="Til">
+									</div>	
+								</div>
+								<div class="row">
+									<label class="col-lg-2 col-form-label">Vis:</label>
+
+										<div class="form-group col-lg-10">
+											<select class='form-control col-lg-12' name='club' id='club'>
+												<option value="" selected>Vis alle svømmere</option>
+												<option disabled="disabled"></option>
+												<option value="10000">Vestdanmark</option>
+												<option value="10001">Østdanmark</option>
+												<option disabled="disabled"></option>
+												<option value="20005">Region Nordjylland</option>
+												<option value="20004">Region Midtjylland</option>
+												<option value="20003">Region Syddanmark</option>
+												<option value="20002">Region Sydsjællland</option>
+												<option value="20001">Region Nordsjælland</option>
+												<option disabled="disabled"></option>
+<option value='330'>/tri club denmark</option><option value='316'>24 Timer Hjallerup</option><option value='1'>A6</option><option value='2'>A6 JGI-Swim</option><option value='4'>A6 Slangerup Svømmeklub</option><option value='3'>A6 Svømmeklubben Laksen</option><option value='193'>Agerskov Sogns Ungdomsforening</option><option value='328'>Agerskov Ungdomsskole</option><option value='192'>Agfs Svømmeafdeling</option><option value='191'>AIA-Tranbjerg</option><option value='190'>Albertslund IF</option><option value='189'>Alhedens Idrætsforening</option><option value='188'>Aulum GF</option><option value='187'>Auning Svømmeklub</option><option value='186'>Beder-Malling IF</option><option value='185'>Berns Swim Team</option><option value='184'>Billund IF</option><option value='183'>Bjerre Herreds Svømmeklub</option><option value='182'>Bjerringbro Svømmeklub</option><option value='181'>Blåvandshuk Svømmeklub</option><option value='180'>Bogense Svømmeklub</option><option value='179'>Bording Svømmeklub</option><option value='177'>Bov IF</option><option value='175'>Bramming Svømmeklub</option><option value='176'>Brædstrup Svømmeklub</option><option value='173'>Brøndby Strands GF</option><option value='172'>Brønderslev SK08</option><option value='337'>Copenhagen International School</option><option value='167'>DeltaSwim</option><option value='166'>Dragsholm Svømmeklub</option><option value='165'>Dragør Svømmeklub</option><option value='164'>Durup IF</option><option value='163'>Ebeltoft Svømme Klub</option><option value='162'>Egebjerg Svømmeklub</option><option value='160'>Egvad Svømmeklub</option><option value='157'>Erritsø Gymnastik Og IF</option><option value='156'>Esbjerg Svømmeklub</option><option value='153'>Farum Familie Svøm</option><option value='152'>Farum Svømmeklub</option><option value='315'>Faxe Svømmeklub</option><option value='151'>FHI SvømmeKlub</option><option value='150'>Fjerritslev Svømmeklub</option><option value='149'>Frederikshavn Svømmeklub</option><option value='147'>Frederikssund Svømmeklub</option><option value='146'>Frederiksværk Svømmeklub</option><option value='145'>Frem Odense</option><option value='155'>Faaborg Svømmeklub</option><option value='143'>Ganløse Svømmeklub</option><option value='142'>Gentofte Svømme Klub</option><option value='140'>Gladsaxe Svømmeklub</option><option value='139'>Glostrup Svømmeklub</option><option value='138'>Grenaa Svømmeklub</option><option value='137'>GTI - Greve</option><option value='95'>GTI - Ishøj</option><option value='257'>GTI - Tune I.F.</option><option value='136'>Gudhjem Idræts Forening</option><option value='135'>Gudme Svømme Klub</option><option value='133'>Gymnastikforeningen Gefion</option><option value='289'>H2Odense</option><option value='130'>Haderslev Svømme Klub</option><option value='129'>Haderslev Tri 2000</option><option value='127'>Hadsund Svømmeklub</option><option value='86'>Hals Svømmeklub</option><option value='331'>Halstedhus Efterskole</option><option value='126'>Hareskov Idrætsforening</option><option value='335'>Hareskovens Triathlon Klub</option><option value='125'>Harlev Idræts Klub</option><option value='123'>Haslev Svømmeklub</option><option value='120'>Helsinge Svømmeklub</option><option value='317'>Helsingør Handicap Svøm</option><option value='119'>Helsingør Svømmeklub</option><option value='118'>Herlev Svømning</option><option value='117'>Herlufsholm Svømmeklub</option><option value='115'>Herning Svømmeklub</option><option value='132'>HGF Svømning</option><option value='114'>HGU Svømning</option><option value='113'>Hillerød Svømmeklub</option><option value='112'>Hjortshøj-Egå IF Svømmeafdeling</option><option value='111'>Hobro Svømmeklub</option><option value='110'>HOG-Hinnerup</option><option value='109'>Holbæk Motions Svømmeklub</option><option value='108'>Holbæk Svømme Klub</option><option value='107'>Holstebro Svømme Club</option><option value='105'>Hornslet Svømmeklub</option><option value='104'>Horsens Svømmeklub</option><option value='103'>Hovedstadens Svømmeklub</option><option value='101'>Hvidovre Svømmeklub</option><option value='332'>Hørning IF</option><option value='100'>Hørsholm Svømmeforening</option><option value='131'>Haarby Svømmeklub</option><option value='99'>Idrætsforening Jarl, Arden</option><option value='338'>Idrætsforeningen Spækhuggeren</option><option value='98'>IF For Handicappede, Aalborg</option><option value='318'>IFAH Hørsholm</option><option value='97'>IHF Svømning</option><option value='96'>Ikast Svømmeklub</option><option value='93'>Kalundborg SK</option><option value='92'>Karlslunde IF</option><option value='302'>Karlslunde Tri</option><option value='91'>Kjellerup SK</option><option value='90'>Kjøbenhavns GF</option><option value='87'>Kolding SK</option><option value='82'>KSG Idræt, Svømmeafd.</option><option value='262'>KU Svømning og Vandpolo</option><option value='80'>Københavns Triathlonklub 1986</option><option value='79'>Køge Svømmeklub</option><option value='78'>Kølvrå Svømmeklub</option><option value='319'>Lavia, Odder</option><option value='77'>Lavia, Aarhus</option><option value='74'>Livredderskolen Djursland</option><option value='73'>Lyngby Handicap IF</option><option value='72'>Lyngby Svømmeklub</option><option value='71'>Lyseng IF</option><option value='70'>Lystrup IF</option><option value='326'>Låsby Svømmeklub</option><option value='304'>Maribo og Omegns Handicap Idrætsforening</option><option value='68'>Maribo Svømmeforening</option><option value='327'>Midtsjællands Svømmeklub</option><option value='67'>Morsø Svømmeklub</option><option value='66'>Multiatleterne Esbjerg</option><option value='65'>Munkebo Svømme- og kondiklub 72</option><option value='64'>Møns Svømmeklub</option><option value='61'>Nakskov Svømme Klub</option><option value='60'>NNGU - Team Blaabjerg</option><option value='59'>Nord-Als Svømmeklub</option><option value='57'>Nyborg Svømmeklub</option><option value='334'>Nyborg Vandpolo</option><option value='56'>Nysted Svømmeklub</option><option value='63'>Næstved IF</option><option value='54'>Odder Svømmeklub</option><option value='52'>Odsherred Svømmeklub</option><option value='305'>Ollerup-Skerninge Svømmeafd.</option><option value='51'>Orient Svømning</option><option value='50'>Pan Idræt - Mermates</option><option value='94'>Præstø Sport Svømmeafdeling</option><option value='46'>Randers Freja Triathlon</option><option value='45'>Randers GF Neptun</option><option value='44'>Ribe Svømmeklub</option><option value='43'>Ringe Svømme Klub</option><option value='320'>Ringsted Handicap IF</option><option value='41'>Ringsted Svømme Klub</option><option value='40'>Rishøj IF</option><option value='39'>Roklubben Viking</option><option value='38'>Roskilde Svømmeklub</option><option value='37'>Roskilde Svømning</option><option value='36'>Ruds Vedby Svømmeklub</option><option value='35'>Rødby Svømmeklub</option><option value='34'>Rødding Svømmeklub</option><option value='33'>Rødekro Svømmeklub</option><option value='32'>Rønne Svømme Klub</option><option value='288'>Rønnede IF Svømmeafd.</option><option value='29'>Sdr. Omme IF</option><option value='28'>SIGMA Swim</option><option value='27'>Sigma Swim Allerød</option><option value='26'>Sigma Swim Birkerød</option><option value='297'>Silkeborg Motion/Tri-klub</option><option value='25'>Silkeborg Svømmeklub</option><option value='24'>Sindal Svømmeforening</option><option value='22'>Skagen Svømmeklub</option><option value='21'>Skals Gymnastikforening</option><option value='20'>Skanderborg Svømmeklub</option><option value='19'>Skive Svømmeklub Poseidon</option><option value='23'>Skærbæk Svømmeklub</option><option value='18'>Slagelse Svømmeklub</option><option value='17'>Snedsted Svømmeklub</option><option value='16'>Snejbjerg Svømmeklub</option><option value='15'>Solbjerg IF</option><option value='13'>Solrød Svømmeklub</option><option value='325'>Sorø Svømmeklub</option><option value='12'>Spentrup Svømmeklub</option><option value='10'>Startfællesskabet GTI</option><option value='7'>Struer Svømmeklub</option><option value='6'>Støvring Svømmeklub Pingvinen</option><option value='205'>Svendborg Svømme Klub</option><option value='223'>SVØM Korsør</option><option value='224'>Svømmeklubben Branditten</option><option value='298'>Svømmeklubben Delfinen</option><option value='293'>Svømmeklubben Flipper</option><option value='225'>Svømmeklubben Grindsted</option><option value='226'>Svømmeklubben Jet</option><option value='227'>Svømmeklubben Koral</option><option value='228'>Svømmeklubben Kvik, Kastrup</option><option value='271'>Svømmeklubben MK31</option><option value='230'>Svømmeklubben Nejst</option><option value='231'>Svømmeklubben Nord</option><option value='233'>Svømmeklubben Opnør</option><option value='235'>Svømmeklubben Rask</option><option value='236'>Svømmeklubben S 68</option><option value='237'>Svømmeklubben SHS Stevns</option><option value='238'>Svømmeklubben SMUT Terndrup</option><option value='240'>SvømmeKlubben SYD</option><option value='321'>Svømmeklubben Sælungerne</option><option value='241'>Svømmeklubben Søhesten</option><option value='324'>Svømmeklubben Søløven</option><option value='242'>Svømmeklubben Sømærket</option><option value='243'>Svømmeklubben Sønderborg</option><option value='245'>Svømmeklubben Triton Ballerup</option><option value='211'>Swim Team Neptun</option><option value='215'>Swim Team Taastrup - VATCPH</option><option value='31'>Sæby Svømmeklub SSK</option><option value='246'>Søllerød Svømmeklub</option><option value='287'>Søløven Svømmeklub</option><option value='250'>Them Svømmeklub</option><option value='251'>Thisted Svømmeklub</option><option value='253'>Tingbjerg Svømmeklub</option><option value='254'>Tommerup Svømme Klub</option><option value='255'>TRI-4 Triathlon Klub</option><option value='256'>TST Svømning</option><option value='260'>Tønder Svømmeklub</option><option value='261'>Tørring IF</option><option value='263'>Ugerløse Svømmeklub</option><option value='267'>Vallensbæk IF Af 1939</option><option value='268'>Vamdrup I.F.s Svømmeafdeling</option><option value='294'>Vandhund Sydfyn</option><option value='269'>Varde Svømmeklub</option><option value='270'>VAT Copenhagen</option><option value='272'>Vejen Svømmeklub</option><option value='273'>Vejle Svømmeklub</option><option value='276'>Vest-Brøndby</option><option value='303'>Vestfyns Svømmeklub</option><option value='299'>VG 17</option><option value='278'>Viborg Svømme Klub</option><option value='279'>Videbæk Svømme Club</option><option value='281'>VIK-Skovbakken Svømmeafdeling</option><option value='282'>Vildbjerg Svømmeklub</option><option value='283'>Vinderup GF Svømning</option><option value='322'>Vordingborg Handicap Idræt</option><option value='284'>Vordingborg Svømme Klub</option><option value='265'>Værløse Svømmeklub</option><option value='194'>Ærø Svømme Klub</option><option value='285'>Ølgod Svømmeklub</option><option value='295'>Østervrå IF Svømmeafdeling</option><option value='204'>Aabybro Idrætsforening</option><option value='203'>Aalborg Studenternes Idrætsforening</option><option value='202'>Aalborg Svømmeklub</option><option value='201'>Aalborg Triathlon Klub</option><option value='200'>Aarhus 1900 Triathlon</option><option value='199'>Aarhus Idrætsforening Af 1900</option><option value='198'>Aarhus Studenternes Svømmeafdeling</option><option value='197'>Aarhus Swim</option><option value='196'>Aars Svømmeklub</option>											
+											</select>
+										</div>
+								</div>								
+								<div class="row from-group">
+								<div class="col-12">
+									<button type="submit" class="btn btn-primary">Vis point rangliste</button>
+									<a href='/ranglister/'><button type="button" class="btn btn-secondary">Nulstil</button></a>
+								</div>
+								</div>
+							</div>
+							
+						</form><!--end::Form-->
+				</div>					
+</div>						
+</div>
+</div>
+
+<div class="col-md-8">
+		<div class="k-portlet k-portlet--mobile">
+					<div class="k-portlet__head">
+		<div class="k-portlet__head-label">
+			<h3 class="k-portlet__head-title">50 Fri rangliste på kortbane for damer</h3>
+		</div>
+	</div>
+<div class="k-portlet__body">							
+<table class="table-sm ranking table table-striped- table-bordered table-hover table-checkable responsive no-wrap" id="">
+<thead><tr><th>#</th><th style='/*text-align:right;*/'>Navn</th><th>Årgang</th><th>Løb</th><th>Bassin</th><th>Tid</th><th>FINA</th><th>SVØM</th><th>Dato</th></tr></thead><tbody>
+			
+<tr><td>1</td><td><a href='/svoemmer/?1944/pernille_blume'>Pernille Blume</td><td>1994</td><td>50 Fri</td><td>25m</td><td>23.73</td><td>902</td><td>1186</td><td>08-12-2019</td></tr><tr><td>2</td><td><a href='/svoemmer/?1/julie_kepp_jensen'>Julie Kepp Jensen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>24.42</td><td>827</td><td>1088</td><td>27-04-2019</td></tr><tr><td>3</td><td><a href='/svoemmer/?11284/emily_gantriis'>Emily Gantriis</td><td>1999</td><td>50 Fri</td><td>25m</td><td>24.75</td><td>795</td><td>1045</td><td>08-11-2019</td></tr><tr><td>4</td><td><a href='/svoemmer/?10233/emilie_beckmann'>Emilie Beckmann</td><td>1997</td><td>50 Fri</td><td>25m</td><td>24.88</td><td>782</td><td>1029</td><td>08-11-2019</td></tr><tr><td>5</td><td><a href='/svoemmer/?3946/signe_bro'>Signe Bro</td><td>1999</td><td>50 Fri</td><td>25m</td><td>25.07</td><td>765</td><td>1005</td><td>08-11-2019</td></tr><tr><td>6</td><td><a href='/svoemmer/?7200/jeanette_ottesen'>Jeanette Ottesen</td><td>1987</td><td>50 Fri</td><td>25m</td><td>25.16</td><td>756</td><td>995</td><td>03-02-2019</td></tr><tr><td>7</td><td><a href='/svoemmer/?6097/mie_oe._nielsen'>Mie Ø. Nielsen</td><td>1996</td><td>50 Fri</td><td>25m</td><td>25.34</td><td>740</td><td>974</td><td>04-10-2019</td></tr><tr><td>8</td><td><a href='/svoemmer/?16937/karoline_barrett'>Karoline Barrett</td><td>2002</td><td>50 Fri</td><td>25m</td><td>25.35</td><td>740</td><td>973</td><td>07-11-2019</td></tr><tr><td>9</td><td><a href='/svoemmer/?9780/caroline_erichsen'>Caroline Erichsen</td><td>1998</td><td>50 Fri</td><td>25m</td><td>25.39</td><td>736</td><td>968</td><td>08-11-2019</td></tr><tr><td>10</td><td><a href='/svoemmer/?2182/amalie_mikkelsen'>Amalie Mikkelsen</td><td>1997</td><td>50 Fri</td><td>25m</td><td>25.49</td><td>727</td><td>957</td><td>08-11-2019</td></tr><tr><td>11</td><td><a href='/svoemmer/?18661/snaefridur_sol'>Snæfridur Sol</td><td>2000</td><td>50 Fri</td><td>25m</td><td>25.52</td><td>725</td><td>953</td><td>08-11-2019</td></tr><tr><td>12</td><td><a href='/svoemmer/?21638/elisabeth_sabroe_ebbesen'>Elisabeth Sabroe Ebbesen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>25.60</td><td>718</td><td>944</td><td>29-11-2019</td></tr><tr><td>13</td><td><a href='/svoemmer/?11520/maria_grandt'>Maria Grandt</td><td>1998</td><td>50 Fri</td><td>25m</td><td>25.89</td><td>694</td><td>913</td><td>07-11-2019</td></tr><tr><td>14</td><td><a href='/svoemmer/?17944/johanne_hingebjerg'>Johanne Hingebjerg</td><td>2002</td><td>50 Fri</td><td>25m</td><td>25.91</td><td>693</td><td>911</td><td>14-12-2019</td></tr><tr><td>15</td><td><a href='/svoemmer/?14864/helena_v._elling'>Helena V. Elling</td><td>2000</td><td>50 Fri</td><td>25m</td><td>25.94</td><td>690</td><td>908</td><td>08-11-2019</td></tr><tr><td>16</td><td><a href='/svoemmer/?26735/schastine_tabor'>Schastine Tabor</td><td>2005</td><td>50 Fri</td><td>25m</td><td>25.95</td><td>689</td><td>907</td><td>01-11-2019</td></tr><tr><td>17</td><td><a href='/svoemmer/?14694/laerke_toft_ruby'>Lærke Toft Ruby</td><td>1999</td><td>50 Fri</td><td>25m</td><td>26.08</td><td>679</td><td>893</td><td>05-10-2019</td></tr><tr><td>18</td><td><a href='/svoemmer/?11070/sophie_amalie_schoen'>Sophie Amalie Schøn</td><td>1999</td><td>50 Fri</td><td>25m</td><td>26.10</td><td>678</td><td>891</td><td>01-11-2019</td></tr><tr><td>19</td><td><a href='/svoemmer/?21662/liva_stjernholm'>Liva Stjernholm</td><td>2004</td><td>50 Fri</td><td>25m</td><td>26.10</td><td>678</td><td>891</td><td>01-11-2019</td></tr><tr><td>20</td><td><a href='/svoemmer/?26340/nele_schulze'>Nele Schulze</td><td>2004</td><td>50 Fri</td><td>25m</td><td>26.14</td><td>674</td><td>887</td><td>17-11-2019</td></tr><tr><td>21</td><td><a href='/svoemmer/?18818/line_j._v._hededal'>Line J. V. Hededal</td><td>2001</td><td>50 Fri</td><td>25m</td><td>26.18</td><td>671</td><td>883</td><td>08-11-2019</td></tr><tr><td>22</td><td><a href='/svoemmer/?15367/camilla_ottesen'>Camilla Ottesen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>26.19</td><td>671</td><td>882</td><td>14-12-2019</td></tr><tr><td>23</td><td><a href='/svoemmer/?22648/karoline_soerensen'>Karoline Sørensen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>26.22</td><td>668</td><td>879</td><td>30-11-2019</td></tr><tr><td>24</td><td><a href='/svoemmer/?3467/line_joergensen_bruun'>Line Jørgensen Bruun</td><td>1995</td><td>50 Fri</td><td>25m</td><td>26.27</td><td>665</td><td>874</td><td>07-11-2019</td></tr><tr><td>25</td><td><a href='/svoemmer/?20065/benedicte_them_jensen'>Benedicte Them Jensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>26.28</td><td>664</td><td>873</td><td>01-11-2019</td></tr><tr><td>26</td><td><a href='/svoemmer/?27462/mathilde_maria_thorsen'>Mathilde Maria Thorsen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>26.30</td><td>662</td><td>871</td><td>01-11-2019</td></tr><tr><td>27</td><td><a href='/svoemmer/?21778/emilie_meng'>Emilie Meng</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.31</td><td>661</td><td>870</td><td>14-12-2019</td></tr><tr><td>28</td><td><a href='/svoemmer/?18973/andrea_paaske'>Andrea Paaske</td><td>2001</td><td>50 Fri</td><td>25m</td><td>26.39</td><td>655</td><td>862</td><td>08-11-2019</td></tr><tr><td>29</td><td><a href='/svoemmer/?28184/frida_bang_stanelt'>Frida Bang Stanelt</td><td>2004</td><td>50 Fri</td><td>25m</td><td>26.43</td><td>653</td><td>858</td><td>01-11-2019</td></tr><tr><td>30</td><td><a href='/svoemmer/?20209/victoria_bierre'>Victoria Bierre</td><td>2000</td><td>50 Fri</td><td>25m</td><td>26.45</td><td>651</td><td>856</td><td>05-10-2019</td></tr><tr><td>31</td><td><a href='/svoemmer/?18293/naya_modin_thomsen'>Naya Modin Thomsen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.45</td><td>651</td><td>856</td><td>01-11-2019</td></tr><tr><td>32</td><td><a href='/svoemmer/?23475/anna_wrist-elkjaer'>Anna Wrist-Elkjær</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.48</td><td>649</td><td>853</td><td>01-11-2019</td></tr><tr><td>33</td><td><a href='/svoemmer/?27680/louise_d._liboriussen'>Louise D. Liboriussen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>26.51</td><td>647</td><td>850</td><td>08-11-2019</td></tr><tr><td>34</td><td><a href='/svoemmer/?20124/sarah_sirek_hansen'>Sarah Sirek Hansen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.51</td><td>647</td><td>850</td><td>07-11-2019</td></tr><tr><td>35</td><td><a href='/svoemmer/?25257/freja_stenbaekgaard'>Freja Stenbækgård</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.52</td><td>646</td><td>849</td><td>01-11-2019</td></tr><tr><td>36</td><td><a href='/svoemmer/?17959/laura_glerup_jensen'>Laura Glerup Jensen</td><td>1998</td><td>50 Fri</td><td>25m</td><td>26.53</td><td>645</td><td>848</td><td>01-06-2019</td></tr><tr><td>37</td><td><a href='/svoemmer/?19413/caroline_broholm'>Caroline Broholm</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.54</td><td>644</td><td>847</td><td>01-11-2019</td></tr><tr><td>38</td><td><a href='/svoemmer/?29280/fenja_romanski'>Fenja Romanski</td><td>2005</td><td>50 Fri</td><td>25m</td><td>26.55</td><td>644</td><td>846</td><td>28-09-2019</td></tr><tr><td>39</td><td><a href='/svoemmer/?13393/cecilie_wiuff'>Cecilie Wiuff</td><td>2000</td><td>50 Fri</td><td>25m</td><td>26.57</td><td>642</td><td>845</td><td>23-11-2019</td></tr><tr><td>40</td><td><a href='/svoemmer/?23482/sofie_bruun_hoevring'>Sofie Bruun Høvring</td><td>2004</td><td>50 Fri</td><td>25m</td><td>26.60</td><td>640</td><td>842</td><td>01-11-2019</td></tr><tr><td>41</td><td><a href='/svoemmer/?19212/regitze_gaard'>Regitze Gaard</td><td>2001</td><td>50 Fri</td><td>25m</td><td>26.61</td><td>639</td><td>841</td><td>04-05-2019</td></tr><tr><td>42</td><td><a href='/svoemmer/?24743/astrid_nielsen'>Astrid Nielsen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>26.61</td><td>639</td><td>841</td><td>07-11-2019</td></tr><tr><td>43</td><td><a href='/svoemmer/?19241/iben_bak'>Iben Bak</td><td>2001</td><td>50 Fri</td><td>25m</td><td>26.63</td><td>638</td><td>839</td><td>08-11-2019</td></tr><tr><td>44</td><td><a href='/svoemmer/?27878/my_phuong_bui'>My Phuong Bui</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.63</td><td>638</td><td>839</td><td>30-11-2019</td></tr><tr><td>45</td><td><a href='/svoemmer/?11430/marie_voigt_lauridsen'>Marie Voigt Lauridsen</td><td>1995</td><td>50 Fri</td><td>25m</td><td>26.66</td><td>636</td><td>836</td><td>14-12-2019</td></tr><tr><td>46</td><td><a href='/svoemmer/?11092/anna_wermuth'>Anna Wermuth</td><td>1996</td><td>50 Fri</td><td>25m</td><td>26.66</td><td>636</td><td>836</td><td>08-11-2019</td></tr><tr><td>47</td><td><a href='/svoemmer/?17114/marina_nissen_jakobsen'>Marina Nissen Jakobsen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>26.69</td><td>634</td><td>833</td><td>05-10-2019</td></tr><tr><td>48</td><td><a href='/svoemmer/?13710/anna_brandt_nielsen'>Anna Brandt Nielsen</td><td>1998</td><td>50 Fri</td><td>25m</td><td>26.71</td><td>632</td><td>831</td><td>14-12-2019</td></tr><tr><td>49</td><td><a href='/svoemmer/?14226/amalie_bach_nielsen'>Amalie Bach Nielsen</td><td>1999</td><td>50 Fri</td><td>25m</td><td>26.73</td><td>631</td><td>829</td><td>08-11-2019</td></tr><tr><td>50</td><td><a href='/svoemmer/?11680/sofia_altoft'>Sofia Altoft</td><td>1998</td><td>50 Fri</td><td>25m</td><td>26.76</td><td>629</td><td>827</td><td>08-11-2019</td></tr><tr><td>51</td><td><a href='/svoemmer/?30349/cecilie_caroee_helmark'>Cecilie Carøe Helmark</td><td>2005</td><td>50 Fri</td><td>25m</td><td>26.78</td><td>627</td><td>825</td><td>14-12-2019</td></tr><tr><td>52</td><td><a href='/svoemmer/?19763/cecilie_daluiso_salmonsen'>Cecilie Daluiso Salmonsen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>26.88</td><td>620</td><td>816</td><td>08-11-2019</td></tr><tr><td>53</td><td><a href='/svoemmer/?14151/julie_kroeyer_svendsen'>Julie Krøyer Svendsen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>26.88</td><td>620</td><td>816</td><td>04-05-2019</td></tr><tr><td>54</td><td><a href='/svoemmer/?25262/alberte_v._bisgaard'>Alberte V. Bisgaard</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.88</td><td>620</td><td>816</td><td>01-11-2019</td></tr><tr><td>55</td><td><a href='/svoemmer/?29985/cille_kirketerp'>Cille Kirketerp</td><td>2005</td><td>50 Fri</td><td>25m</td><td>26.88</td><td>620</td><td>816</td><td>01-11-2019</td></tr><tr><td>56</td><td><a href='/svoemmer/?24118/sofie_theophil_petersen'>Sofie Theophil Petersen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.91</td><td>618</td><td>813</td><td>07-09-2019</td></tr><tr><td>57</td><td><a href='/svoemmer/?33306/pernille_thastrup_hansen'>Pernille Thastrup Hansen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.91</td><td>618</td><td>813</td><td>01-11-2019</td></tr><tr><td>58</td><td><a href='/svoemmer/?24604/freja_romanski'>Freja Romanski</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.96</td><td>615</td><td>808</td><td>01-06-2019</td></tr><tr><td>59</td><td><a href='/svoemmer/?26814/rebecca_e._jacobsen'>Rebecca E. Jacobsen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>26.96</td><td>615</td><td>808</td><td>01-11-2019</td></tr><tr><td>60</td><td><a href='/svoemmer/?37246/nanna_langvad'>Nanna Langvad</td><td>2005</td><td>50 Fri</td><td>25m</td><td>26.96</td><td>615</td><td>808</td><td>01-11-2019</td></tr><tr><td>61</td><td><a href='/svoemmer/?24857/camilla_broegger-andersen'>Camilla Brøgger-Andersen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>26.97</td><td>614</td><td>808</td><td>08-11-2019</td></tr><tr><td>62</td><td><a href='/svoemmer/?24367/sara_damkjaer_bartels'>Sara Damkjær Bartels</td><td>2004</td><td>50 Fri</td><td>25m</td><td>26.97</td><td>614</td><td>808</td><td>01-11-2019</td></tr><tr><td>63</td><td><a href='/svoemmer/?28044/julie_liv_madsen'>Julie Liv Madsen</td><td>2006</td><td>50 Fri</td><td>25m</td><td>26.98</td><td>613</td><td>807</td><td>14-12-2019</td></tr><tr><td>64</td><td><a href='/svoemmer/?2003/linda_lund_tietze'>Linda Lund Tietze</td><td>1984</td><td>50 Fri</td><td>25m</td><td>27.04</td><td>609</td><td>801</td><td>23-02-2019</td></tr><tr><td>65</td><td><a href='/svoemmer/?28327/maja_johanne_pedersen'>Maja Johanne Pedersen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.08</td><td>607</td><td>798</td><td>14-12-2019</td></tr><tr><td>66</td><td><a href='/svoemmer/?5435/megan_forslund_hansen'>Megan Forslund Hansen</td><td>1997</td><td>50 Fri</td><td>25m</td><td>27.10</td><td>605</td><td>796</td><td>14-12-2019</td></tr><tr><td>67</td><td><a href='/svoemmer/?25824/julie_k_rose'>Julie K Rose</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.13</td><td>603</td><td>793</td><td>14-12-2019</td></tr><tr><td>68</td><td><a href='/svoemmer/?19372/lisa_rijkhoff'>Lisa Rijkhoff</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.16</td><td>601</td><td>791</td><td>30-11-2019</td></tr><tr><td>69</td><td><a href='/svoemmer/?19904/mathilde_menck_nielsen'>Mathilde Menck Nielsen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.18</td><td>600</td><td>789</td><td>08-11-2019</td></tr><tr><td>70</td><td><a href='/svoemmer/?19543/johanna_berthelsen'>Johanna Berthelsen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.21</td><td>598</td><td>786</td><td>04-02-2020</td></tr><tr><td>71</td><td><a href='/svoemmer/?24370/frederikke_marie_hansen'>Frederikke Marie Hansen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.21</td><td>598</td><td>786</td><td>08-09-2019</td></tr><tr><td>72</td><td><a href='/svoemmer/?25952/amalie_wichmann_larsen'>Amalie Wichmann Larsen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.21</td><td>598</td><td>786</td><td>05-10-2019</td></tr><tr><td>73</td><td><a href='/svoemmer/?15242/amalie_baerentsen'>Amalie Bærentsen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.26</td><td>595</td><td>782</td><td>08-11-2019</td></tr><tr><td>74</td><td><a href='/svoemmer/?27003/asta_poulsen_dolan'>Asta Poulsen Dolan</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.27</td><td>594</td><td>781</td><td>01-11-2019</td></tr><tr><td>75</td><td><a href='/svoemmer/?6584/marina_heller_hansen'>Marina Heller Hansen</td><td>1994</td><td>50 Fri</td><td>25m</td><td>27.29</td><td>593</td><td>779</td><td>22-09-2019</td></tr><tr><td>76</td><td><a href='/svoemmer/?30420/laerke_dann-nielsen'>Lærke Dann-Nielsen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.30</td><td>592</td><td>779</td><td>29-09-2019</td></tr><tr><td>77</td><td><a href='/svoemmer/?11484/josefine_b._pedersen'>Josefine B. Pedersen</td><td>1999</td><td>50 Fri</td><td>25m</td><td>27.32</td><td>591</td><td>777</td><td>26-02-2019</td></tr><tr><td>78</td><td><a href='/svoemmer/?23273/gro_grinda_rasmussen'>Gro Grinda Rasmussen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.32</td><td>591</td><td>777</td><td>14-12-2019</td></tr><tr><td>79</td><td><a href='/svoemmer/?25171/cille_christensen'>Cille Christensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.32</td><td>591</td><td>777</td><td>25-10-2019</td></tr><tr><td>80</td><td><a href='/svoemmer/?17582/vera_staun_hansen'>Vera Staun Hansen</td><td>1999</td><td>50 Fri</td><td>25m</td><td>27.35</td><td>589</td><td>774</td><td>24-10-2019</td></tr><tr><td>81</td><td><a href='/svoemmer/?19076/julie_darlem_brandt'>Julie Darlem Brandt</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.35</td><td>589</td><td>774</td><td>07-11-2019</td></tr><tr><td>82</td><td><a href='/svoemmer/?26907/tine_petersen'>Tine Petersen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.35</td><td>589</td><td>774</td><td>07-09-2019</td></tr><tr><td>83</td><td><a href='/svoemmer/?12870/katja_korbo_petersson'>Katja Korbo Petersson</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.36</td><td>588</td><td>773</td><td>23-11-2019</td></tr><tr><td>84</td><td><a href='/svoemmer/?8402/pernille_rasmussen'>Pernille Rasmussen</td><td>1996</td><td>50 Fri</td><td>25m</td><td>27.37</td><td>588</td><td>773</td><td>07-11-2019</td></tr><tr><td>85</td><td><a href='/svoemmer/?15426/frederikke_mertins'>Frederikke Mertins</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.38</td><td>587</td><td>772</td><td>21-05-2019</td></tr><tr><td>86</td><td><a href='/svoemmer/?31096/sofie_sjoegren'>Sofie Sjøgren</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.38</td><td>587</td><td>772</td><td>11-01-2020</td></tr><tr><td>87</td><td><a href='/svoemmer/?29667/coco_li_fuhrmann'>Coco Li Fuhrmann</td><td>2006</td><td>50 Fri</td><td>25m</td><td>27.38</td><td>587</td><td>772</td><td>01-12-2019</td></tr><tr><td>88</td><td><a href='/svoemmer/?31928/ida_skov_kragh'>Ida Skov Kragh</td><td>2006</td><td>50 Fri</td><td>25m</td><td>27.38</td><td>587</td><td>772</td><td>08-03-2020</td></tr><tr><td>89</td><td><a href='/svoemmer/?21003/martha_vitus_tversted'>Martha Vitus Tversted</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.39</td><td>586</td><td>771</td><td>04-10-2019</td></tr><tr><td>90</td><td><a href='/svoemmer/?19782/matilde_mantzius_mosegaard'>Matilde Mantzius Mosegård</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.41</td><td>585</td><td>769</td><td>15-06-2019</td></tr><tr><td>91</td><td><a href='/svoemmer/?22563/stine_saaby_schmidt'>Stine Saaby Schmidt</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.42</td><td>584</td><td>768</td><td>03-02-2019</td></tr><tr><td>92</td><td><a href='/svoemmer/?20697/caroline_buhl_schroeder'>Caroline Buhl Schrøder</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.42</td><td>584</td><td>768</td><td>01-11-2019</td></tr><tr><td>93</td><td><a href='/svoemmer/?7197/julie_schmidt'>Julie Schmidt</td><td>1995</td><td>50 Fri</td><td>25m</td><td>27.43</td><td>584</td><td>768</td><td>24-11-2019</td></tr><tr><td>94</td><td><a href='/svoemmer/?24768/line_noehr_petersen'>Line Nøhr Petersen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.44</td><td>583</td><td>767</td><td>07-12-2019</td></tr><tr><td>95</td><td><a href='/svoemmer/?29196/clara_matilde_carstensen'>Clara Matilde Carstensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.44</td><td>583</td><td>767</td><td>01-11-2019</td></tr><tr><td>96</td><td><a href='/svoemmer/?29193/mette_holstein'>Mette Holstein</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.44</td><td>583</td><td>767</td><td>04-01-2020</td></tr><tr><td>97</td><td><a href='/svoemmer/?19624/cecilie_b._andersen'>Cecilie B. Andersen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.45</td><td>582</td><td>766</td><td>08-11-2019</td></tr><tr><td>98</td><td><a href='/svoemmer/?16383/jessica_yu_mortensen'>Jessica Yu Mortensen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.46</td><td>582</td><td>765</td><td>07-11-2019</td></tr><tr><td>99</td><td><a href='/svoemmer/?21185/isabella_rosendahl_bach'>Isabella Rosendahl Bach</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.46</td><td>582</td><td>765</td><td>13-12-2019</td></tr><tr><td>100</td><td><a href='/svoemmer/?23484/laerke_rask_sander'>Lærke Rask Sander</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.46</td><td>582</td><td>765</td><td>24-05-2019</td></tr><tr><td>101</td><td><a href='/svoemmer/?21786/liva_schmid'>Liva Schmid</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.47</td><td>581</td><td>764</td><td>07-11-2019</td></tr><tr><td>102</td><td><a href='/svoemmer/?30576/stine_bendixen_nissen'>Stine Bendixen Nissen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.50</td><td>579</td><td>762</td><td>01-11-2019</td></tr><tr><td>103</td><td><a href='/svoemmer/?30671/malu_melody_christensen'>Malu Melody Christensen</td><td>2006</td><td>50 Fri</td><td>25m</td><td>27.51</td><td>579</td><td>761</td><td>01-12-2019</td></tr><tr><td>104</td><td><a href='/svoemmer/?5003/sophia_skou'>Sophia Skou</td><td>1975</td><td>50 Fri</td><td>25m</td><td>27.54</td><td>577</td><td>758</td><td>02-11-2019</td></tr><tr><td>105</td><td><a href='/svoemmer/?13178/sara_sylvest'>Sara Sylvest</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.55</td><td>576</td><td>758</td><td>07-09-2019</td></tr><tr><td>106</td><td><a href='/svoemmer/?17598/regitze_gotthard'>Regitze Gotthard</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.55</td><td>576</td><td>758</td><td>11-01-2020</td></tr><tr><td>107</td><td><a href='/svoemmer/?19034/julie_stampe'>Julie Stampe</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.56</td><td>575</td><td>757</td><td>04-10-2019</td></tr><tr><td>108</td><td><a href='/svoemmer/?19067/sofie_nielsen'>Sofie Nielsen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.57</td><td>575</td><td>756</td><td>11-01-2020</td></tr><tr><td>109</td><td><a href='/svoemmer/?22772/cecilie_groendal'>Cecilie Grøndal</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.57</td><td>575</td><td>756</td><td>31-08-2019</td></tr><tr><td>110</td><td><a href='/svoemmer/?21893/mia_rindshoej'>Mia Rindshøj</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.57</td><td>575</td><td>756</td><td>04-10-2019</td></tr><tr><td>111</td><td><a href='/svoemmer/?24230/martha_hjuler_britze'>Martha Hjuler Britze</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.57</td><td>575</td><td>756</td><td>01-11-2019</td></tr><tr><td>112</td><td><a href='/svoemmer/?10589/kaja_aunstrup'>Kaja Aunstrup</td><td>1998</td><td>50 Fri</td><td>25m</td><td>27.60</td><td>573</td><td>753</td><td>27-04-2019</td></tr><tr><td>113</td><td><a href='/svoemmer/?17592/luna_donde_feilberg'>Luna Donde Feilberg</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.60</td><td>573</td><td>753</td><td>22-09-2019</td></tr><tr><td>114</td><td><a href='/svoemmer/?17104/jackie_gade'>Jackie Gade</td><td>1998</td><td>50 Fri</td><td>25m</td><td>27.61</td><td>572</td><td>753</td><td>30-11-2019</td></tr><tr><td>115</td><td><a href='/svoemmer/?27307/freja_petersen'>Freja Petersen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.61</td><td>572</td><td>753</td><td>13-01-2019</td></tr><tr><td>116</td><td><a href='/svoemmer/?32389/katrine_kruse_rasmussen'>Katrine Kruse Rasmussen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.61</td><td>572</td><td>753</td><td>04-10-2019</td></tr><tr><td>117</td><td><a href='/svoemmer/?25241/laura_borre_jacobsen'>Laura Borre Jacobsen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.64</td><td>570</td><td>750</td><td>14-12-2019</td></tr><tr><td>118</td><td><a href='/svoemmer/?8193/matilde_schroeder'>Matilde Schrøder</td><td>1996</td><td>50 Fri</td><td>25m</td><td>27.66</td><td>569</td><td>749</td><td>28-09-2019</td></tr><tr><td>119</td><td><a href='/svoemmer/?20066/elisabeth_them_jensen'>Elisabeth Them Jensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.66</td><td>569</td><td>749</td><td>01-11-2019</td></tr><tr><td>120</td><td><a href='/svoemmer/?26999/kristine_nilsson_norby'>Kristine Nilsson Norby</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.66</td><td>569</td><td>749</td><td>04-10-2019</td></tr><tr><td>121</td><td><a href='/svoemmer/?26536/mia_t._klüver-kristensen'>Mia T. Klüver-Kristensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.67</td><td>569</td><td>748</td><td>01-06-2019</td></tr><tr><td>122</td><td><a href='/svoemmer/?18958/sofie_maagoee'>Sofie Maagøe</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.69</td><td>567</td><td>746</td><td>04-10-2019</td></tr><tr><td>123</td><td><a href='/svoemmer/?30938/maria_oestergaard_nielsen'>Maria Østergaard Nielsen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.69</td><td>567</td><td>746</td><td>16-12-2019</td></tr><tr><td>124</td><td><a href='/svoemmer/?33124/amalie_tolderlund'>Amalie Tolderlund</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.69</td><td>567</td><td>746</td><td>14-12-2019</td></tr><tr><td>125</td><td><a href='/svoemmer/?23385/amalie_w._olsen'>Amalie W. Olsen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.70</td><td>567</td><td>745</td><td>08-11-2019</td></tr><tr><td>126</td><td><a href='/svoemmer/?20044/thea_soee_bach'>Thea Søe Bach</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.70</td><td>567</td><td>745</td><td>01-12-2019</td></tr><tr><td>127</td><td><a href='/svoemmer/?29304/amanda_busk_olesen'>Amanda Busk Olesen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.71</td><td>566</td><td>744</td><td>08-11-2019</td></tr><tr><td>128</td><td><a href='/svoemmer/?30058/ida_villemoes_poulsen'>Ida Villemoes Poulsen</td><td>2007</td><td>50 Fri</td><td>25m</td><td>27.71</td><td>566</td><td>744</td><td>08-03-2020</td></tr><tr><td>129</td><td><a href='/svoemmer/?18803/lisa_schoen'>Lisa Schøn</td><td>1999</td><td>50 Fri</td><td>25m</td><td>27.72</td><td>566</td><td>744</td><td>11-05-2019</td></tr><tr><td>130</td><td><a href='/svoemmer/?29160/marie_louise_b_andersen'>Marie Louise B Andersen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.72</td><td>566</td><td>744</td><td>14-12-2019</td></tr><tr><td>131</td><td><a href='/svoemmer/?5544/line_petersen'>Line Petersen</td><td>1991</td><td>50 Fri</td><td>25m</td><td>27.74</td><td>564</td><td>742</td><td>14-12-2019</td></tr><tr><td>132</td><td><a href='/svoemmer/?27650/amalie_staghoej_andersen'>Amalie Staghøj Andersen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.74</td><td>564</td><td>742</td><td>31-05-2019</td></tr><tr><td>133</td><td><a href='/svoemmer/?33494/sofie_le_fevre'>Sofie Le Fevre</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.74</td><td>564</td><td>742</td><td>04-10-2019</td></tr><tr><td>134</td><td><a href='/svoemmer/?20476/amalie_soeby_mortensen'>Amalie Søby Mortensen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.75</td><td>564</td><td>741</td><td>05-09-2019</td></tr><tr><td>135</td><td><a href='/svoemmer/?29788/emilie_egerup'>Emilie Egerup</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.75</td><td>564</td><td>741</td><td>14-06-2019</td></tr><tr><td>136</td><td><a href='/svoemmer/?29518/emilia_c._r._olsen'>Emilia C. R. Olsen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.75</td><td>564</td><td>741</td><td>04-10-2019</td></tr><tr><td>137</td><td><a href='/svoemmer/?28636/mathilda_hyldal_jung'>Mathilda Hyldal Jung</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.76</td><td>563</td><td>740</td><td>23-11-2019</td></tr><tr><td>138</td><td><a href='/svoemmer/?13282/karina_hoeybye_olesen'>Karina Høybye Olesen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>27.78</td><td>562</td><td>739</td><td>11-06-2019</td></tr><tr><td>139</td><td><a href='/svoemmer/?19525/thea_blomsterberg'>Thea Blomsterberg</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.78</td><td>562</td><td>739</td><td>04-01-2020</td></tr><tr><td>140</td><td><a href='/svoemmer/?31002/mira_emilie_schmidt'>Mira Emilie Schmidt</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.78</td><td>562</td><td>739</td><td>12-05-2019</td></tr><tr><td>141</td><td><a href='/svoemmer/?29110/andrea_lindberg_vedoee'>Andrea Lindberg Vedøe</td><td>2006</td><td>50 Fri</td><td>25m</td><td>27.78</td><td>562</td><td>739</td><td>29-11-2019</td></tr><tr><td>142</td><td><a href='/svoemmer/?25152/caroline_holm'>Caroline Holm</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.79</td><td>561</td><td>738</td><td>16-11-2019</td></tr><tr><td>143</td><td><a href='/svoemmer/?28998/josephine_thomsen'>Josephine Thomsen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.80</td><td>561</td><td>737</td><td>12-05-2019</td></tr><tr><td>144</td><td><a href='/svoemmer/?24337/alma_heyn_stage'>Alma Heyn Stage</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.81</td><td>560</td><td>736</td><td>04-10-2019</td></tr><tr><td>145</td><td><a href='/svoemmer/?32001/sofie_ravn_herche'>Sofie Ravn Herche</td><td>2007</td><td>50 Fri</td><td>25m</td><td>27.81</td><td>560</td><td>736</td><td>14-09-2019</td></tr><tr><td>146</td><td><a href='/svoemmer/?20432/ida_maria_nielsen'>Ida Maria Nielsen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.82</td><td>559</td><td>736</td><td>04-10-2019</td></tr><tr><td>147</td><td><a href='/svoemmer/?29360/ane_kirstine_granild'>Ane Kirstine Granild</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.82</td><td>559</td><td>736</td><td>14-12-2019</td></tr><tr><td>148</td><td><a href='/svoemmer/?26215/soes_freund'>Søs Freund</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.83</td><td>559</td><td>735</td><td>04-10-2019</td></tr><tr><td>149</td><td><a href='/svoemmer/?25200/freja_roejkjaer_rasmussen'>Freja Røjkjær Rasmussen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.84</td><td>558</td><td>734</td><td>01-11-2019</td></tr><tr><td>150</td><td><a href='/svoemmer/?25253/linnea_hietala'>Linnea Hietala</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.84</td><td>558</td><td>734</td><td>14-12-2019</td></tr><tr><td>151</td><td><a href='/svoemmer/?33999/thea_kaiser'>Thea Kaiser</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.84</td><td>558</td><td>734</td><td>30-06-2019</td></tr><tr><td>152</td><td><a href='/svoemmer/?16041/sofie_thunoe_rasmussen'>Sofie Thunø Rasmussen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.85</td><td>558</td><td>733</td><td>04-01-2020</td></tr><tr><td>153</td><td><a href='/svoemmer/?30103/anna_myhre_rottensten'>Anna Myhre Rottensten</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.85</td><td>558</td><td>733</td><td>04-10-2019</td></tr><tr><td>154</td><td><a href='/svoemmer/?31094/louise_jensen'>Louise Jensen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.85</td><td>558</td><td>733</td><td>07-09-2019</td></tr><tr><td>155</td><td><a href='/svoemmer/?27834/ella_korre_stenholt'>Ella Korre Stenholt</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.86</td><td>557</td><td>733</td><td>01-12-2019</td></tr><tr><td>156</td><td><a href='/svoemmer/?4088/julie_broendum_petersen'>Julie Brøndum Petersen</td><td>1994</td><td>50 Fri</td><td>25m</td><td>27.87</td><td>556</td><td>732</td><td>02-11-2019</td></tr><tr><td>157</td><td><a href='/svoemmer/?25155/anna_larsen'>Anna Larsen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.87</td><td>556</td><td>732</td><td>04-10-2019</td></tr><tr><td>158</td><td><a href='/svoemmer/?23923/maria_lund'>Maria Lund</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.88</td><td>556</td><td>731</td><td>29-11-2019</td></tr><tr><td>159</td><td><a href='/svoemmer/?32732/sofie_kruse_rasmussen'>Sofie Kruse Rasmussen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.88</td><td>556</td><td>731</td><td>01-11-2019</td></tr><tr><td>160</td><td><a href='/svoemmer/?32176/isabella_pedersen'>Isabella Pedersen</td><td>2007</td><td>50 Fri</td><td>25m</td><td>27.88</td><td>556</td><td>731</td><td>01-12-2019</td></tr><tr><td>161</td><td><a href='/svoemmer/?20961/maria_szokody'>Maria Szokody</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.89</td><td>555</td><td>730</td><td>11-01-2020</td></tr><tr><td>162</td><td><a href='/svoemmer/?23594/sofia_norre_bendt'>Sofia Norre Bendt</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.89</td><td>555</td><td>730</td><td>01-12-2019</td></tr><tr><td>163</td><td><a href='/svoemmer/?31375/sofie_a._wolf'>Sofie A. Wolf</td><td>2006</td><td>50 Fri</td><td>25m</td><td>27.89</td><td>555</td><td>730</td><td>07-03-2020</td></tr><tr><td>164</td><td><a href='/svoemmer/?12311/cecilie_lykke_hansen'>Cecilie Lykke Hansen</td><td>1999</td><td>50 Fri</td><td>25m</td><td>27.90</td><td>555</td><td>729</td><td>04-10-2019</td></tr><tr><td>165</td><td><a href='/svoemmer/?22002/sofie_hansen'>Sofie Hansen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.90</td><td>555</td><td>729</td><td>07-09-2019</td></tr><tr><td>166</td><td><a href='/svoemmer/?25138/ida_zeiler_terkildsen'>Ida Zeiler Terkildsen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.90</td><td>555</td><td>729</td><td>01-02-2020</td></tr><tr><td>167</td><td><a href='/svoemmer/?25956/sisse_berg_olesen'>Sisse Berg Olesen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.90</td><td>555</td><td>729</td><td>08-03-2020</td></tr><tr><td>168</td><td><a href='/svoemmer/?31739/signe_eie'>Signe Eie</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.90</td><td>555</td><td>729</td><td>01-11-2019</td></tr><tr><td>169</td><td><a href='/svoemmer/?33831/anna_pave_ottesen'>Anna Pave Ottesen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.92</td><td>553</td><td>728</td><td>22-10-2019</td></tr><tr><td>170</td><td><a href='/svoemmer/?29447/karoline_kristensen'>Karoline Kristensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.92</td><td>553</td><td>728</td><td>14-12-2019</td></tr><tr><td>171</td><td><a href='/svoemmer/?28242/mia_borgensgaard'>Mia Borgensgaard</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.93</td><td>553</td><td>727</td><td>26-01-2019</td></tr><tr><td>172</td><td><a href='/svoemmer/?16567/kristine_mikkelsen'>Kristine Mikkelsen</td><td>2000</td><td>50 Fri</td><td>25m</td><td>27.94</td><td>552</td><td>726</td><td>30-11-2019</td></tr><tr><td>173</td><td><a href='/svoemmer/?21267/frederikke_echardt'>Frederikke Echardt</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.94</td><td>552</td><td>726</td><td>04-10-2019</td></tr><tr><td>174</td><td><a href='/svoemmer/?29106/agnete_boelt'>Agnete Boelt</td><td>2006</td><td>50 Fri</td><td>25m</td><td>27.94</td><td>552</td><td>726</td><td>29-11-2019</td></tr><tr><td>175</td><td><a href='/svoemmer/?25233/sofie_lund-schierbeck'>Sofie Lund-Schierbeck</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.96</td><td>551</td><td>725</td><td>16-12-2019</td></tr><tr><td>176</td><td><a href='/svoemmer/?26262/mille_kjaer_jensen'>Mille Kjær Jensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>27.96</td><td>551</td><td>725</td><td>01-11-2019</td></tr><tr><td>177</td><td><a href='/svoemmer/?27189/rebecca_petersen'>Rebecca Petersen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>27.96</td><td>551</td><td>725</td><td>01-11-2019</td></tr><tr><td>178</td><td><a href='/svoemmer/?27375/zara_wendel'>Zara Wendel</td><td>2002</td><td>50 Fri</td><td>25m</td><td>27.98</td><td>550</td><td>723</td><td>29-09-2019</td></tr><tr><td>179</td><td><a href='/svoemmer/?13431/sophie_e._modeweg-hansen'>Sophie E. Modeweg-Hansen</td><td>1997</td><td>50 Fri</td><td>25m</td><td>27.99</td><td>549</td><td>722</td><td>01-03-2019</td></tr><tr><td>180</td><td><a href='/svoemmer/?22449/elena_westmark_holm'>Elena Westmark Holm</td><td>2003</td><td>50 Fri</td><td>25m</td><td>27.99</td><td>549</td><td>722</td><td>06-01-2019</td></tr><tr><td>181</td><td><a href='/svoemmer/?20458/kajsa_g._christensen'>Kajsa G. Christensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.00</td><td>549</td><td>722</td><td>29-11-2019</td></tr><tr><td>182</td><td><a href='/svoemmer/?18721/emma_bjoernholdt'>Emma Bjørnholdt</td><td>2000</td><td>50 Fri</td><td>25m</td><td>28.02</td><td>548</td><td>720</td><td>22-09-2019</td></tr><tr><td>183</td><td><a href='/svoemmer/?27880/nikoline_andersen'>Nikoline Andersen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.02</td><td>548</td><td>720</td><td>04-10-2019</td></tr><tr><td>184</td><td><a href='/svoemmer/?25042/emma_joergensen'>Emma Jørgensen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.03</td><td>547</td><td>719</td><td>01-03-2019</td></tr><tr><td>185</td><td><a href='/svoemmer/?26339/alberte_hedevang_petersen'>Alberte Hedevang Petersen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.04</td><td>546</td><td>718</td><td>04-10-2019</td></tr><tr><td>186</td><td><a href='/svoemmer/?29323/mie_ankersen'>Mie Ankersen</td><td>2006</td><td>50 Fri</td><td>25m</td><td>28.04</td><td>546</td><td>718</td><td>17-11-2019</td></tr><tr><td>187</td><td><a href='/svoemmer/?23805/nicoline_ingeman-petersen'>Nicoline Ingeman-Petersen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.05</td><td>546</td><td>718</td><td>27-04-2019</td></tr><tr><td>188</td><td><a href='/svoemmer/?19615/caroline_goettrup_bagge'>Caroline Gøttrup Bagge</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.05</td><td>546</td><td>718</td><td>01-11-2019</td></tr><tr><td>189</td><td><a href='/svoemmer/?23255/frederikke_falk-list'>Frederikke Falk-List</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.05</td><td>546</td><td>718</td><td>16-11-2019</td></tr><tr><td>190</td><td><a href='/svoemmer/?29174/filippa_eiler'>Filippa Eiler</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.05</td><td>546</td><td>718</td><td>24-11-2019</td></tr><tr><td>191</td><td><a href='/svoemmer/?30636/mathilde_severs'>Mathilde Severs</td><td>2006</td><td>50 Fri</td><td>25m</td><td>28.07</td><td>545</td><td>716</td><td>29-09-2019</td></tr><tr><td>192</td><td><a href='/svoemmer/?22587/ditte_toft_ibsen'>Ditte Toft Ibsen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.08</td><td>544</td><td>715</td><td>05-01-2019</td></tr><tr><td>193</td><td><a href='/svoemmer/?23607/mie_bidsted_hansen'>Mie Bidsted Hansen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.08</td><td>544</td><td>715</td><td>14-12-2019</td></tr><tr><td>194</td><td><a href='/svoemmer/?27980/mille_broholm_brixen'>Mille Broholm Brixen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.08</td><td>544</td><td>715</td><td>01-11-2019</td></tr><tr><td>195</td><td><a href='/svoemmer/?94104/tereza_duchoslavova'>Tereza Duchoslavova</td><td>2000</td><td>50 Fri</td><td>25m</td><td>28.09</td><td>543</td><td>715</td><td>27-10-2019</td></tr><tr><td>196</td><td><a href='/svoemmer/?34370/anna_andersen'>Anna Andersen</td><td>2007</td><td>50 Fri</td><td>25m</td><td>28.09</td><td>543</td><td>715</td><td>01-12-2019</td></tr><tr><td>197</td><td><a href='/svoemmer/?27416/anna_toft_petersen'>Anna Toft Petersen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.10</td><td>543</td><td>714</td><td>28-09-2019</td></tr><tr><td>198</td><td><a href='/svoemmer/?33500/katrine_stoltenhoff'>Katrine Stoltenhoff</td><td>2006</td><td>50 Fri</td><td>25m</td><td>28.10</td><td>543</td><td>714</td><td>08-03-2020</td></tr><tr><td>199</td><td><a href='/svoemmer/?26787/caroline_veggerby'>Caroline Veggerby</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.11</td><td>542</td><td>713</td><td>26-04-2019</td></tr><tr><td>200</td><td><a href='/svoemmer/?33106/frederikke_elster'>Frederikke Elster</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.11</td><td>542</td><td>713</td><td>01-12-2019</td></tr><tr><td>201</td><td><a href='/svoemmer/?28694/ellen_jensen'>Ellen Jensen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.11</td><td>542</td><td>713</td><td>04-10-2019</td></tr><tr><td>202</td><td><a href='/svoemmer/?25045/thilde_timmermand'>Thilde Timmermand</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.12</td><td>542</td><td>712</td><td>21-09-2019</td></tr><tr><td>203</td><td><a href='/svoemmer/?22325/josephine_b._u._danielsen'>Josephine B. U. Danielsen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.12</td><td>542</td><td>712</td><td>16-11-2019</td></tr><tr><td>204</td><td><a href='/svoemmer/?24485/amalie_kruse_enemaerke'>Amalie Kruse Enemærke</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.12</td><td>542</td><td>712</td><td>27-04-2019</td></tr><tr><td>205</td><td><a href='/svoemmer/?27892/nikoline_marie_lange'>Nikoline Marie Lange</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.13</td><td>541</td><td>712</td><td>01-11-2019</td></tr><tr><td>206</td><td><a href='/svoemmer/?32687/falka_tind'>Falka Tind</td><td>2006</td><td>50 Fri</td><td>25m</td><td>28.13</td><td>541</td><td>712</td><td>16-11-2019</td></tr><tr><td>207</td><td><a href='/svoemmer/?17465/simone_joergensen'>Simone Jørgensen</td><td>1999</td><td>50 Fri</td><td>25m</td><td>28.14</td><td>541</td><td>711</td><td>02-02-2020</td></tr><tr><td>208</td><td><a href='/svoemmer/?22356/kaya_fjeldsted_kristensen'>Kaya Fjeldsted Kristensen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.14</td><td>541</td><td>711</td><td>28-04-2019</td></tr><tr><td>209</td><td><a href='/svoemmer/?22108/melanie_eggertsen'>Melanie Eggertsen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.16</td><td>539</td><td>709</td><td>11-01-2019</td></tr><tr><td>210</td><td><a href='/svoemmer/?20624/kamille_auerbach-lind'>Kamille Auerbach-Lind</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.17</td><td>539</td><td>709</td><td>28-04-2019</td></tr><tr><td>211</td><td><a href='/svoemmer/?24352/pernille_elm_jensen'>Pernille Elm Jensen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.17</td><td>539</td><td>709</td><td>23-11-2019</td></tr><tr><td>212</td><td><a href='/svoemmer/?31998/martine_damborg'>Martine Damborg</td><td>2007</td><td>50 Fri</td><td>25m</td><td>28.17</td><td>539</td><td>709</td><td>29-09-2019</td></tr><tr><td>213</td><td><a href='/svoemmer/?21260/laerke_schelde-mollerup'>Lærke Schelde-Mollerup</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.18</td><td>538</td><td>708</td><td>23-11-2019</td></tr><tr><td>214</td><td><a href='/svoemmer/?24012/christina_m._glargaard'>Christina M. Glargaard</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.18</td><td>538</td><td>708</td><td>01-06-2019</td></tr><tr><td>215</td><td><a href='/svoemmer/?15062/emma_maagoee'>Emma Maagøe</td><td>1999</td><td>50 Fri</td><td>25m</td><td>28.19</td><td>538</td><td>707</td><td>22-09-2019</td></tr><tr><td>216</td><td><a href='/svoemmer/?4138/marie_philipsen'>Marie Philipsen</td><td>1992</td><td>50 Fri</td><td>25m</td><td>28.20</td><td>537</td><td>706</td><td>07-03-2020</td></tr><tr><td>217</td><td><a href='/svoemmer/?803/mai_hjelmgaard'>Mai Hjelmgaard</td><td>1994</td><td>50 Fri</td><td>25m</td><td>28.20</td><td>537</td><td>706</td><td>23-02-2019</td></tr><tr><td>218</td><td><a href='/svoemmer/?32119/karoline_kjelstrup'>Karoline Kjelstrup</td><td>2006</td><td>50 Fri</td><td>25m</td><td>28.20</td><td>537</td><td>706</td><td>30-11-2019</td></tr><tr><td>219</td><td><a href='/svoemmer/?24366/zenia_aarestrup'>Zenia Aarestrup</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.21</td><td>537</td><td>706</td><td>08-09-2019</td></tr><tr><td>220</td><td><a href='/svoemmer/?20879/katrine_bonefeld'>Katrine Bonefeld</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.21</td><td>537</td><td>706</td><td>29-11-2019</td></tr><tr><td>221</td><td><a href='/svoemmer/?24642/caroline_wiuff_jensen'>Caroline Wiuff Jensen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.22</td><td>536</td><td>705</td><td>16-11-2019</td></tr><tr><td>222</td><td><a href='/svoemmer/?26772/amalie_brammer_kaergaard'>Amalie Brammer Kærgaard</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.22</td><td>536</td><td>705</td><td>16-11-2019</td></tr><tr><td>223</td><td><a href='/svoemmer/?25882/thippe_de_neergaard'>Thippe de Neergaard</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.23</td><td>535</td><td>704</td><td>02-03-2019</td></tr><tr><td>224</td><td><a href='/svoemmer/?28740/dicte_skov_forsberg'>Dicte Skov Forsberg</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.23</td><td>535</td><td>704</td><td>09-11-2019</td></tr><tr><td>225</td><td><a href='/svoemmer/?21151/nikoline_biltoft-jensen'>Nikoline Biltoft-Jensen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.24</td><td>535</td><td>703</td><td>01-12-2019</td></tr><tr><td>226</td><td><a href='/svoemmer/?4620/ghita_kobbelgaard'>Ghita Kobbelgaard</td><td>1995</td><td>50 Fri</td><td>25m</td><td>28.25</td><td>534</td><td>703</td><td>05-01-2019</td></tr><tr><td>227</td><td><a href='/svoemmer/?25888/amanda_da_silva_b._madsen'>Amanda Da Silva B. Madsen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.25</td><td>534</td><td>703</td><td>27-04-2019</td></tr><tr><td>228</td><td><a href='/svoemmer/?19084/emilie_nyegaard'>Emilie Nyegaard</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.26</td><td>534</td><td>702</td><td>21-09-2019</td></tr><tr><td>229</td><td><a href='/svoemmer/?25172/elma_gabela'>Elma Gabela</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.27</td><td>533</td><td>701</td><td>02-03-2019</td></tr><tr><td>230</td><td><a href='/svoemmer/?28343/nanna_udby_laugesen'>Nanna Udby Laugesen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.27</td><td>533</td><td>701</td><td>14-12-2019</td></tr><tr><td>231</td><td><a href='/svoemmer/?30642/astrid_m._oestergaard'>Astrid M. Østergaard</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.27</td><td>533</td><td>701</td><td>21-09-2019</td></tr><tr><td>232</td><td><a href='/svoemmer/?16934/liva_palmund'>Liva Palmund</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.29</td><td>532</td><td>700</td><td>16-06-2019</td></tr><tr><td>233</td><td><a href='/svoemmer/?23728/ulrikke_veje'>Ulrikke Veje</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.29</td><td>532</td><td>700</td><td>29-09-2019</td></tr><tr><td>234</td><td><a href='/svoemmer/?22456/sofie_trekaer_klausen'>Sofie Trekær Klausen</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.29</td><td>532</td><td>700</td><td>04-10-2019</td></tr><tr><td>235</td><td><a href='/svoemmer/?30344/anna_olivia_kirchhoff'>Anna Olivia Kirchhoff</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.29</td><td>532</td><td>700</td><td>24-11-2019</td></tr><tr><td>236</td><td><a href='/svoemmer/?19679/victoria_haahr_pallesen'>Victoria Haahr Pallesen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.30</td><td>531</td><td>699</td><td>30-11-2019</td></tr><tr><td>237</td><td><a href='/svoemmer/?22607/frederikke_skau_hansen'>Frederikke Skau Hansen</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.30</td><td>531</td><td>699</td><td>11-01-2020</td></tr><tr><td>238</td><td><a href='/svoemmer/?2761/tone_laksafoss_sparre'>Tone Laksafoss Sparre</td><td>1996</td><td>50 Fri</td><td>25m</td><td>28.31</td><td>531</td><td>698</td><td>23-02-2019</td></tr><tr><td>239</td><td><a href='/svoemmer/?19627/mie_buch_nielsen'>Mie Buch Nielsen</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.31</td><td>531</td><td>698</td><td>27-10-2019</td></tr><tr><td>240</td><td><a href='/svoemmer/?23601/claudia_sperling'>Claudia Sperling</td><td>2002</td><td>50 Fri</td><td>25m</td><td>28.31</td><td>531</td><td>698</td><td>15-03-2019</td></tr><tr><td>241</td><td><a href='/svoemmer/?20273/thea_lund_petersen'>Thea Lund Petersen</td><td>1998</td><td>50 Fri</td><td>25m</td><td>28.32</td><td>530</td><td>697</td><td>22-02-2020</td></tr><tr><td>242</td><td><a href='/svoemmer/?33678/ella_gohr_metz'>Ella Gohr Metz</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.32</td><td>530</td><td>697</td><td>16-11-2019</td></tr><tr><td>243</td><td><a href='/svoemmer/?31596/naja_faergemann'>Naja Færgemann</td><td>2006</td><td>50 Fri</td><td>25m</td><td>28.32</td><td>530</td><td>697</td><td>16-11-2019</td></tr><tr><td>244</td><td><a href='/svoemmer/?27171/olivia_callesen'>Olivia Callesen</td><td>2004</td><td>50 Fri</td><td>25m</td><td>28.33</td><td>530</td><td>697</td><td>01-12-2019</td></tr><tr><td>245</td><td><a href='/svoemmer/?28076/caroline_sofie_aagaard'>Caroline Sofie Aagaard</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.34</td><td>529</td><td>696</td><td>01-11-2019</td></tr><tr><td>246</td><td><a href='/svoemmer/?29669/matilde_maagoee'>Matilde Maagøe</td><td>2007</td><td>50 Fri</td><td>25m</td><td>28.34</td><td>529</td><td>696</td><td>01-12-2019</td></tr><tr><td>247</td><td><a href='/svoemmer/?21781/mathilde_yde_munkebaek'>Mathilde Yde Munkebæk</td><td>2003</td><td>50 Fri</td><td>25m</td><td>28.35</td><td>529</td><td>695</td><td>24-11-2019</td></tr><tr><td>248</td><td><a href='/svoemmer/?27467/hannah_b._pedersen'>Hannah B. Pedersen</td><td>2005</td><td>50 Fri</td><td>25m</td><td>28.35</td><td>529</td><td>695</td><td>24-11-2019</td></tr><tr><td>249</td><td><a href='/svoemmer/?8965/tanja_h_nielsen'>Tanja H Nielsen</td><td>1996</td><td>50 Fri</td><td>25m</td><td>28.37</td><td>528</td><td>694</td><td>08-12-2019</td></tr><tr><td>250</td><td><a href='/svoemmer/?16563/cecilie_elkjaer'>Cecilie Elkjær</td><td>2001</td><td>50 Fri</td><td>25m</td><td>28.37</td><td>528</td><td>694</td><td>21-05-2019</td></tr></tbody></table>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end::Row-->
+
+
+
+									<!--end::Dashboard 4-->
+								</div>
+
+								<!-- end:: Content Body -->
+							</div>
+
+							<!-- end:: Content -->
+						</div>
+					</div>
+
+
+
+
+
+</div>
+</div>
+
+					<!-- begin:: Footer -->
+					<div class="k-footer k-grid__item" style="background-color:#003767" id="k_footer">
+						<div class="k-container">
+							<div class="k-footer__bottom">
+								<div class="k-footer__copyright">
+									2020&nbsp;&copy;&nbsp;<strong><a href="https://svømmetider.dk" class="k-link">Svømmetider</a>&nbsp;&nbsp;</strong><span style="color:#003767">
+									 - Genereret på 0.6746 sekunder.								</span></div>
+								<div class="k-footer__menu">
+									<a href="https://kontoret.svømmetider.dk" class="k-link">Gå til Kontoret</a>
+									<a href="https://svoem.org" target="_blank" class="k-link">Dansk Svømmeunion</a>
+									<a href="https://www.facebook.com/svoemmetider/" class="k-link">Kontakt</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- end:: Footer -->
+				</div>
+			</div>
+		</div>
+
+		<!-- end:: Page -->
+
+		<!-- begin::Scrolltop -->
+		<div id="k_scrolltop" class="k-scrolltop">
+			<i class="la la-arrow-up"></i>
+		</div>
+
+		<!-- end::Scrolltop -->
+
+		
+		
+
+		<!--begin:: Global Mandatory Vendors -->
+		<script src="/assets/vendors/general/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/popper.js/dist/umd/popper.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/js-cookie/src/js.cookie.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/moment/min/moment.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/tooltip.js/dist/umd/tooltip.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/perfect-scrollbar/dist/perfect-scrollbar.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/sticky-js/dist/sticky.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/wnumb/wNumb.js" type="text/javascript"></script>
+
+		<!--end:: Global Mandatory Vendors -->
+
+		<!--begin:: Global Optional Vendors -->
+		<script src="/assets/vendors/general/jquery-form/dist/jquery.form.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/block-ui/jquery.blockUI.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/theme/framework/vendors/bootstrap-datepicker/init.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-datetime-picker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/theme/framework/vendors/bootstrap-timepicker/init.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-maxlength/src/bootstrap-maxlength.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/vendors/bootstrap-multiselectsplitter/bootstrap-multiselectsplitter.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-select/dist/js/bootstrap-select.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/typeahead.js/dist/typeahead.bundle.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/handlebars/dist/handlebars.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/inputmask/dist/jquery.inputmask.bundle.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/inputmask/dist/inputmask/inputmask.date.extensions.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/inputmask/dist/inputmask/inputmask.numeric.extensions.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/inputmask/dist/inputmask/inputmask.phone.extensions.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/nouislider/distribute/nouislider.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/owl.carousel/dist/owl.carousel.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/autosize/dist/autosize.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/clipboard/dist/clipboard.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/dropzone/dist/dropzone.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/summernote/dist/summernote.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/markdown/lib/markdown.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/bootstrap-markdown/js/bootstrap-markdown.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/theme/framework/vendors/bootstrap-markdown/init.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/jquery-validation/dist/jquery.validate.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/jquery-validation/dist/additional-methods.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/theme/framework/vendors/jquery-validation/init.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/toastr/build/toastr.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/raphael/raphael.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/morris.js/morris.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/chart.js/dist/Chart.bundle.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/vendors/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/vendors/jquery-idletimer/idle-timer.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/waypoints/lib/jquery.waypoints.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/counterup/jquery.counterup.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/es6-promise-polyfill/promise.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/sweetalert2/dist/sweetalert2.min.js" type="text/javascript"></script>
+		<script src="/assets/vendors/custom/theme/framework/vendors/sweetalert2/init.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/jquery.repeater/src/lib.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/jquery.repeater/src/jquery.input.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/jquery.repeater/src/repeater.js" type="text/javascript"></script>
+		<script src="/assets/vendors/general/dompurify/dist/purify.js" type="text/javascript"></script>
+
+		<!--end:: Global Optional Vendors -->
+
+		<!--begin::Global Theme Bundle -->
+		<script src="/assets/demo/demo3/base/scripts.bundle.js" type="text/javascript"></script>
+
+		<!--end::Global Theme Bundle -->
+
+		<!--begin::Page Vendors -->
+		<script src="/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+
+		<!--end::Page Vendors -->
+
+		<!--begin::Page Scripts -->
+		<script src="/assets/app/scripts/custom/dashboard.js" type="text/javascript"></script>
+		
+		<!--end::Page Scripts -->
+
+		<!--begin::Global App Bundle -->
+		<script src="/assets/app/scripts/bundle/app.bundle.js" type="text/javascript"></script>
+
+		<!--end::Global App Bundle -->
+
+				
+		<!-- begin::Page Loader -->
+		<script>
+			$(window).on('load', function() {
+				$('body').removeClass('k-page--loading');
+			});
+		</script>
+		
+
+
+		<!-- end::Page Loader -->
+	</body>
+	
+
+	<!-- end::Body -->
+</html><script type="text/javascript">
+ /*function configureDropDownLists(pool,lob) {
+        var kortbane = new Array('1', '2', '3','4','5','6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '48', '49', '50', '51');
+		var kortbane_lob = new Array('50 Fri', '100 Fri', '200 Fri', '400 Fri', '800 Fri', '1.500 Fri',  '50 Ryg', '100 Ryg', '200 Ryg', '50 Bryst', '100 Bryst', '200 Bryst', '50 Fly', '100 Fly', '200 Fly', '100 Medley', '200 Medley', '400 Medley', '25 Fri', '25 Ryg', '25 Bryst', '25 Fly');
+        var langbane = new Array('19', '20', '21','22','23','24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35');
+		var langbane_lob = new Array('50 Fri', '100 Fri', '200 Fri', '400 Fri', '800 Fri', '1.500 Fri', '50 Ryg', '100 Ryg', '200 Ryg', '50 Bryst', '100 Bryst', '200 Bryst', '50 Fly', '100 Fly', '200 Fly', '200 Medley', '400 Medley');
+    
+        switch (pool.value) {
+            case '2':
+                lob.options.length = 0;
+                for (i = 0; i < kortbane.length; i++) {
+                    createOption(lob, kortbane_lob[i], kortbane[i]);
+                }
+                break;
+            case '1':
+                lob.options.length = 0; 
+            for (i = 0; i < langbane.length; i++) {
+                createOption(lob, langbane_lob[i], langbane[i]);
+                }
+                break;
+                default:
+                    lob.options.length = 0;
+                break;
+        }
+
+    }
+
+    function createOption(pool, text, value) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.text = text;
+        pool.options.add(opt);
+	}*/
+</script>
+<script src="/assets/vendors/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
+<script src="ranking.js" type="text/javascript"></script>
+<script src="date.js" type="text/javascript"></script>
