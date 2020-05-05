@@ -1,0 +1,84 @@
+1) Opret et stævn for følgend:
+
+Gladsaxe Svømmehal
+Vandtårnsvej 55
+2860 Søborg
+Danmark
+Stævnestart: 4. Oktober 2019
+Stævneslut: 6. Oktober 2019
+
+2) Indlæs resultater ud fra nedenstående. Data skal tilpasses så svømmerne kommer fra denne klub. 
+Så der skal oprettes et medlem for hver svømmer I vælger at indlæse og så skal medlemsID'et bruges 
+som link i resultat-tabellen. 
+For at få så mange data ind som muligt kan I overveje at "snyde" med disse data så I selv finder på
+et par andre stævner som de samme svømmere har deltaget i. Måske ændre lidt på tiderne.
+I kan også overveje at ændre på stamdata i nedenstående så I også får indlæst juniorer. 
+Husk også at oprette medlemmer der er passive og som er over 60. 
+
+
+
+400 Fri Damer finale
+
+['1', 'Josefine B. Pedersen', '1999', 'Svømmeklubben MK31', '1:07.16']
+['2', 'Thea Blomsterberg', '2002', 'Sigma Swim Birkerød', '1:08.24']
+['3', 'Clara Rybak-Andersen', '2003', 'Gentofte Svømme Klub', '1:08.36']
+['4', 'Sara Damkjær Bartels', '2004', 'Gladsaxe Svømmeklub', '1:10.78']
+['5', 'Mathilda Hyldal Jung', '2004', 'A6 Slangerup Svømmeklub', '1:11.10']
+['6', 'Josephine Kruse', '2002', 'Sigma Swim Allerød', '1:11.11']
+['7', 'Jessica Yu Mortensen', '2000', 'Lyngby Svømmeklub', '1:12.11']
+['8', 'Emma Stoltz', '2004', 'Sigma Swim Allerød', '1:13.69']
+['9', 'Josephine G. Lauridsen', '2001', 'Svømmeklubben Triton Ballerup', '1:13.84']
+['10', 'Emilie Nyegaard', '2001', 'Svømmeklubben Triton Ballerup', '1:13.87']
+['11', 'Isabel Mass', '1998', 'A6 JGI-Swim', '1:13.98']
+['12', 'Martha Vitus Tversted', '2002', 'Hørsholm Svømmeforening', '1:14.22']
+['13', 'Benedicte Them Jensen', '2004', 'Køge Svømmeklub', '1:14.58']
+['14', 'Regitze Gotthard', '2002', 'Slagelse Svømmeklub', '1:14.73']
+['15', 'Frederikke Echardt', '2002', 'Svømmeklubben Triton Ballerup', '1:14.85']
+['16', 'Dagmar Boeck', '2004', 'Farum Svømmeklub', '1:14.91']
+
+100 m bryst damer finale:
+['1', 'Amalie Søby Mortensen', '2001', 'Holbæk Svømme Klub', '4:12.17']
+['2', 'Naya Modin Thomsen', '2003', 'Køge Svømmeklub', '4:19.73']
+['3', 'Nina Toft', '2000', 'Gentofte Svømme Klub', '4:20.66']
+['4', 'Sara Sylvest', '2000', 'Svømmeklubben Kvik, Kastrup', '4:21.57']
+['5', 'Michelle Mortensen', '2002', 'Gladsaxe Svømmeklub', '4:22.35']
+['6', 'Mia Steen Duus', '2001', 'Sigma Swim Birkerød', '4:23.73']
+['7', 'Tine Petersen', '2003', 'Svømmeklubben Kvik, Kastrup', '4:23.99']
+['8', 'Kamille Auerbach-Lind', '2001', 'Svømmeklubben Triton Ballerup', '4:24.23']
+['9', 'Lærke Toft Ruby', '1999', 'A6 JGI-Swim', '4:25.54']
+['10', 'Kaya Fjeldsted Kristensen', '2002', 'A6 JGI-Swim', '4:25.71']
+['11', 'Emilia C. R. Olsen', '2004', 'Svømmeklubben Kvik, Kastrup', '4:29.67']
+['12', 'Sofia Norre Bendt', '2003', 'Lyngby Svømmeklub', '4:29.87']
+['13', 'Sofie Maagøe', '2003', 'Hovedstadens Svømmeklub', '4:30.31']
+['14', 'Sofie Nielsen', '2001', 'Slagelse Svømmeklub', '4:30.44']
+['15', 'Olivia Callesen', '2004', 'Hovedstadens Svømmeklub', '4:31.81']
+['16', 'Caroline Wiuff Jensen', '2004', 'Vest-Brøndby', '4:31.83']
+['17', 'Alberte V. Bisgaard', '2003', 'Gentofte Svømme Klub', '4:33.71']
+['18', 'Kajsa G. Christensen', '2004', 'Sigma Swim Birkerød', '4:34.64']
+['19', 'Fiona Andrea Have', '2004', 'Lyngby Svømmeklub', '4:34.99']
+['20', 'Lærke Schelde-Mollerup', '2003', 'A6 JGI-Swim', '4:36.03']
+['21', 'Mai Pallvi', '2000', 'Holbæk Svømme Klub', '4:36.76']
+['22', 'Mie Bidsted Hansen', '2003', 'Hvidovre Svømmeklub', '4:37.74']
+['23', 'Lærke Dann-Nielsen', '2005', 'Hvidovre Svømmeklub', '4:39.20']
+['24', 'Viktoria Freja Sørensen', '2004', 'Gladsaxe Svømmeklub', '4:40.02']
+['25', 'Sophie Grandjean', '2003', 'Ringsted Svømme Klub', '4:40.81']
+['26', 'Silja Brage', '2005', 'A6 JGI-Swim', '4:40.85']
+['27', 'Cornelia Bergqvist', '2003', 'Sigma Swim Birkerød', '4:40.91']
+['28', 'Emilie Hostrup Sahlberg', '2005', 'Ringsted Svømme Klub', '4:42.05']
+['29', 'Caroline Bach Mindested', '2005', 'Sigma Swim Allerød', '4:42.75']
+['30', 'Johanne Baes Aaholst', '2004', 'Hillerød Svømmeklub', '4:44.14']
+['31', 'Mathilde Yde Munkebæk', '2003', 'Svømmeklubben Kvik, Kastrup', '4:44.84']
+['32', 'Ella Gohr Metz', '2005', 'Vest-Brøndby', '4:45.54']
+['33', 'Rebecca Petersen', '2005', 'Hovedstadens Svømmeklub', '4:46.13']
+['34', 'Hannah Höesch', '2003', 'Hovedstadens Svømmeklub', '4:46.52']
+['35', 'Amanda Da Silva B. Madsen', '2005', 'Herlev Svømning', '4:46.78']
+['36', 'Annika Køhn', '2005', 'Vallensbæk IF Af 1939', '4:47.63']
+['37', 'Clara Toft', '2004', 'Gentofte Svømme Klub', '4:47.72']
+['38', 'Liva Lund Hansen', '2005', 'Vallensbæk IF Af 1939', '4:49.70']
+['39', 'Filippa Eiler', '2005', 'Svømmeklubben MK31', '4:51.86']
+['40', 'Caroline Koch', '2005', 'Svømmeklubben Kvik, Kastrup', '4:51.91']
+['41', 'Elisabeth Roskær', '2004', 'Svømmeklubben MK31', '4:52.10']
+['42', 'Maya Krogh Brønnicke', '2005', 'Swim Team Taastrup - VATCPH', '4:54.09']
+['43', 'Line Thode Møller', '2004', 'Farum Svømmeklub', '4:57.85']
+['44', 'Asta Palmund', '2005', 'Roskilde Svømning', '4:58.94']
+['45', 'Emily Hansen', '2005', 'Helsinge Svømmeklub', '5:01.97']

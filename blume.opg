@@ -1,0 +1,34 @@
+
+1) Opret en medlemstabel og indsæt Pernille Blumes stamdata
+
+        Pernille Blume
+        Årgang: 1994
+        Klub: SIGMA Swim (Sigma Swim Birkerød)
+        Licens: 9498AC
+
+1) I første iteration opretter I en resultat-tabel og indsætter følgende med et link til blumes memberid
+I skal nok ikke bruge alle felter. Overvej hvordan I vil gemme svømmetiderne. Man skal jo kunne sortere på dem.
+
+
+['50 Fri', '23.49', '930', '1222', '17-12-2017']
+['100 Fri', '51.63', '921', '1177', '15-12-2017']
+['200 Fri', '1:57.14', '837', '1037', '24-05-2014']
+['400 Fri', '4:12.18', '804', '992', '09-04-2011']
+['800 Fri', '8:47.71', '749', '952', '31-10-2010']
+['50 Ryg', '31.26', '553', '735', '08-05-2011']
+['100 Ryg', '1:05.14', '602', '832', '30-10-2010']
+['200 Ryg', '2:36.25', '444', '591', '06-12-2007']
+['50 Bryst', '32.60', '678', '861', '08-10-2017']
+['100 Bryst', '1:12.85', '627', '819', '20-12-2015']
+['200 Bryst', '2:57.61', '434', '558', '19-11-2006']
+['50 Fly', '25.66', '857', '1111', '16-11-2018']
+['100 Fly', '1:00.43', '738', '948', '17-11-2013']
+['200 Fly', '2:21.52', '603', '806', '25-10-2009']
+['100 IM', '1:01.39', '779', '1031', '07-10-2017']
+['200 IM', '2:18.47', '681', '901', '31-10-2010']
+['400 IM', '4:56.75', '664', '879', '29-10-2010']
+
+2) I anden iteration modificerer I resultat-tabellen så man i stedet indsætter et link til en disciplin-id
+I skal så overveje hvordan disciplin-tabellen ser ud. Ét design er at den består af de unikke rækker '50 Fri',
+'100 Fri'. I kan også lade disciplinen være en linktabel mellem Distance og Style - men med sit eget id!
+

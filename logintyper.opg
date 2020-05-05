@@ -1,0 +1,39 @@
+1) Brugertyper i databasen
+Lav en bruger-tabel i databasen så UserMapperen kan hente brugernavn, password, brugerrolle og evt email
+
+2) Lav en bruger-klasse med attributter svarende til attributterne bruger-tabellen. Brugerrollen kan være en streng eller et tal.
+
+3) Lav en view-klasse som har metoden loginUser. Metoden skal have et sæt bestående af bruger-objekter  med som parameter. 
+Og den skal returnere et bruger-objekt.
+
+- i første omgang skal I ikke tænke over hvor sættet kommer fra. 
+- lav en brugerdialog hvor I beder om brugernavn og password.  Loop igennem jeres sæt og hvis I finder et match returneres brugeren 
+
+4) Lav en Main-klasse som instantierer view-klassen, som laver et sæt af 4 brugere og får leveret en bruger fra metoden loginUser.
+- mainklassen skal have en run-metode som køres når klassen instantieres. Altså:
+
+public class Main {
+    public static void main(String[] args) {
+        Main main = new Main();
+        main.runProgram();
+    }
+
+    public void runProgram() {
+    ...
+    }
+}
+
+5) I skal nu forsøge at udbygge runProgram så den laver tre forskellige menuer ud fra 
+if(user.getUserRole().equals("Admin")) ...
+  så switch ind i Admin-menu-punkter 
+if(user.getUserRole().equals("Cashier")) ...
+  så switch ind i Kasserer-menu-punkter 
+
+und so weiter
+
+6) I skal nu forsøge at 
+
+
+
+
+
