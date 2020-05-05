@@ -1,6 +1,6 @@
 # Uge20: Delfin-stuff
 ### onsdag d 6/5 kl 8.30
-Jeg regner med at være online fra ca kl 8.30 så I kan spørge 
+Jeg regner med at være online fra ca kl 8.30 så I kan spørge. 
 Tjek [my office](https://cphbusiness.zoom.us/my/cphwulf)
 
 ### Opgave 1 - arbejde datadreve(n)t med medlemmer
@@ -10,7 +10,7 @@ Tjek filen blume.opg
 Tjek filen stævne.opg
 
 ### Opgave 3 - arbejde med MVC strukturen
-Tjek filen login
+Tjek filen logintyper.opg
 
 ### Opgave 4 - arbejde med HashMaps
 Tjek branchen DogKennel.
