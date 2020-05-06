@@ -35,7 +35,7 @@ I skal modificere RegisterDogUI så bruger-input gemmes i hash-mappet og ikke i 
 | 14:45 | |  | | |
 | 15:00 | `Gruppe 6`      | | | |
 | 15:15 |||||
-| 15:30 |     |`Gruppe 7` | | |
+| 15:30 |     `Gruppe 7` ||  | |
 | 15:45 | || | |
 
 
