@@ -20,6 +20,7 @@ I skal modificere RegisterDogUI så bruger-input gemmes i hash-mappet og ikke i 
 
 
 ## Torsdag d 7/5 2020 
+Tjek [my office](https://cphbusiness.zoom.us/my/cphwulf)
 
 |     | Gruppe || ||
 | --- | ------- |------- | -------------- |------------------- |
@@ -39,4 +40,3 @@ I skal modificere RegisterDogUI så bruger-input gemmes i hash-mappet og ikke i 
 | 15:45 | `Gruppe 7` || | |
 
 
-Tjek [my office](https://cphbusiness.zoom.us/my/cphwulf)
